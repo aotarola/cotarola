@@ -15,4 +15,4 @@ lightViolet =
 
 white : Color
 white =
-    rgb255 0 0 0
+    rgb255 255 255 255

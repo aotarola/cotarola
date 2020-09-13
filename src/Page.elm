@@ -60,7 +60,6 @@ navBarLink page route label =
     in
     link
         [ paddingXY 15 20
-        , Font.color white
         , mouseOver [ Background.color violet ]
         , backgroundColor
         ]
