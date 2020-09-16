@@ -1,4 +1,11 @@
-module Page.Contact exposing (Model, Msg, init, toSession, update, view)
+module Page.Contact exposing
+    ( Model
+    , Msg
+    , init
+    , toSession
+    , update
+    , view
+    )
 
 import Browser.Dom exposing (Element)
 import Element exposing (Element, text)

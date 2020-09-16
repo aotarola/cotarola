@@ -1,4 +1,11 @@
-module Page.Home exposing (Model, Msg, init, toSession, update, view)
+module Page.Home exposing
+    ( Model
+    , Msg
+    , init
+    , toSession
+    , update
+    , view
+    )
 
 import Element exposing (Element, text)
 import Session exposing (Session)
