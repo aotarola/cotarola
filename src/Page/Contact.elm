@@ -24,7 +24,7 @@ init session =
 view : Model -> { title : String, content : Element msg }
 view _ =
     { title = "Contact"
-    , content = text "contact info"
+    , content = text "pagina de contacto"
     }
 
 

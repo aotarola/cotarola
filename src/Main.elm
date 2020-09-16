@@ -1,4 +1,4 @@
-module Main exposing (..)
+module Main exposing (main)
 
 import Browser exposing (Document)
 import Browser.Navigation as Nav
@@ -51,11 +51,6 @@ changeRouteTo maybeRoute model =
         Just Route.Contact ->
             Contact.init session
                 |> updateWith Contact GotContactMsg model
-
-
-subscriptions : Model -> Sub Msg
-subscriptions _ =
-    Sub.none
 
 
 

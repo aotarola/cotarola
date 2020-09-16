@@ -6,6 +6,7 @@ import Color exposing (lightViolet, violet, white)
 import Element
     exposing
         ( Element
+        , centerX
         , column
         , fill
         , layout
@@ -62,6 +63,7 @@ navBarLink page route label =
         [ paddingXY 15 20
         , mouseOver [ Background.color violet ]
         , backgroundColor
+        , centerX
         ]
         { url = Route.href route
         , label = label
