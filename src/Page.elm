@@ -30,6 +30,7 @@ import Route exposing (Route)
 
 type Page
     = Home
+    | Services
     | Contact
     | Other
 
@@ -84,6 +85,7 @@ navBar page =
         , Font.size 16
         ]
         [ linkTo Route.Home <| text "Inicio"
+        , linkTo Route.Services <| text "Servicios"
         , linkTo Route.Contact <| text "Contacto"
         ]
 
@@ -95,6 +97,9 @@ isActive page route =
             True
 
         ( Contact, Route.Contact ) ->
+            True
+
+        ( Services, Route.Services ) ->
             True
 
         ( _, _ ) ->

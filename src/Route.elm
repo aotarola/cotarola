@@ -11,6 +11,7 @@ import Url.Parser as Parser exposing (Parser, oneOf, s)
 
 type Route
     = Home
+    | Services
     | Contact
 
 
@@ -22,6 +23,7 @@ parser : Parser (Route -> a) a
 parser =
     oneOf
         [ Parser.map Home Parser.top
+        , Parser.map Services (s "servicios")
         , Parser.map Contact (s "contacto")
         ]
 
@@ -36,6 +38,9 @@ routeToPieces page =
     case page of
         Home ->
             []
+
+        Services ->
+            [ "servicios" ]
 
         Contact ->
             [ "contacto" ]

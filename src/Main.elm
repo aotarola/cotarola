@@ -8,6 +8,7 @@ import Page.Blank as Blank
 import Page.Contact as Contact
 import Page.Home as Home
 import Page.NotFound as NotFound
+import Page.Services as Services
 import Route exposing (Route)
 import Session exposing (Session)
 import Url exposing (Url)
@@ -20,6 +21,7 @@ import Url exposing (Url)
 type Model
     = NotFound Session
     | Home Home.Model
+    | Services Services.Model
     | Contact Contact.Model
     | Redirect Session
 
@@ -48,6 +50,10 @@ changeRouteTo maybeRoute model =
             Home.init session
                 |> updateWith Home GotHomeMsg model
 
+        Just Route.Services ->
+            Services.init session
+                |> updateWith Services GotServicesMsg model
+
         Just Route.Contact ->
             Contact.init session
                 |> updateWith Contact GotContactMsg model
@@ -61,6 +67,7 @@ type Msg
     = ChangedUrl Url
     | ClickedLink Browser.UrlRequest
     | GotHomeMsg Home.Msg
+    | GotServicesMsg Services.Msg
     | GotContactMsg Contact.Msg
 
 
@@ -87,6 +94,10 @@ update msg model =
             Home.update subMsg home
                 |> updateWith Home GotHomeMsg model
 
+        ( GotServicesMsg subMsg, Services services ) ->
+            Services.update subMsg services
+                |> updateWith Services GotServicesMsg model
+
         ( GotContactMsg subMsg, Contact contact ) ->
             Contact.update subMsg contact
                 |> updateWith Contact GotContactMsg model
@@ -106,6 +117,9 @@ toSession model =
 
         Home home ->
             Home.toSession home
+
+        Services services ->
+            Services.toSession services
 
         Contact contact ->
             Contact.toSession contact
@@ -141,6 +155,9 @@ view model =
 
         Home home ->
             viewPage Page.Home GotHomeMsg (Home.view home)
+
+        Services services ->
+            viewPage Page.Services GotServicesMsg (Services.view services)
 
         Contact contact ->
             viewPage Page.Contact GotContactMsg (Contact.view contact)
