@@ -1,4 +1,9 @@
-module Color exposing (lightViolet, violet, white)
+module Color exposing
+    ( gray
+    , lightViolet
+    , violet
+    , white
+    )
 
 import Element exposing (Color, rgb255)
 
@@ -16,3 +21,8 @@ lightViolet =
 white : Color
 white =
     rgb255 255 255 255
+
+
+gray : Color
+gray =
+    rgb255 34 34 68
