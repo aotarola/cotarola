@@ -78,13 +78,12 @@ toSession { session } =
 -- PRIVATE
 
 
-mainText : String
-mainText =
-    "oy Claudia y mi re-conexión conmigo misma dió paso a la terapia intuitiva integral. Desde el conocer como paciente algunos métodos comunes con algunos terapeutas fue que comprendí que mi forma de sanar está dentro mío y este poder lo tenemos todos y todas. Cuando comprendo que yo soy la creadora de mi vida y 100% responsable de ella, entiendo que las experiencias que vivo tienen un propósito mayor y tienen que ver con la evolución de mi alma\n\nSi quieres hacerte responsable de tu vida y de toda circunstancia que aparezca en ella debes tener una profunda conexión con tu ser, esto se puede lograr a través de diferentes herramientas que vienen con tu sabiduría interior. Yo te guío a que conectes con ellas, te empoderes y seas el creador/a de la vida que siempre has anhelado.\n "
-
-
 viewContent : Element msg
 viewContent =
+    let
+        mainText =
+            "oy Claudia y mi re-conexión conmigo misma dió paso a la terapia intuitiva integral. Desde el conocer como paciente algunos métodos comunes con algunos terapeutas fue que comprendí que mi forma de sanar está dentro mío y este poder lo tenemos todos y todas. Cuando comprendo que yo soy la creadora de mi vida y 100% responsable de ella, entiendo que las experiencias que vivo tienen un propósito mayor y tienen que ver con la evolución de mi alma\n\nSi quieres hacerte responsable de tu vida y de toda circunstancia que aparezca en ella debes tener una profunda conexión con tu ser, esto se puede lograr a través de diferentes herramientas que vienen con tu sabiduría interior. Yo te guío a que conectes con ellas, te empoderes y seas el creador/a de la vida que siempre has anhelado.\n "
+    in
     row
         [ width fill
         , height fill
