@@ -8,7 +8,18 @@ module Page.Contact exposing
     )
 
 import Browser.Dom exposing (Element)
-import Element exposing (Element, text)
+import Element
+    exposing
+        ( Element
+        , centerX
+        , column
+        , el
+        , fill
+        , spacing
+        , text
+        , width
+        )
+import Element.Font as Font
 import Session exposing (Session)
 
 
@@ -31,7 +42,7 @@ init session =
 view : Model -> { title : String, content : Element msg }
 view _ =
     { title = "Contact"
-    , content = text "pagina de contacto"
+    , content = viewContent
     }
 
 
@@ -45,3 +56,15 @@ update msg model =
 toSession : Model -> Session
 toSession { session } =
     session
+
+
+
+-- PRIVATE
+
+
+viewContent : Element msg
+viewContent =
+    column [ width fill, spacing 20, Font.size 30 ]
+        [ el [ centerX ] <| text "CONTÁCTAME"
+        , el [ centerX ] <| text "gracias@claudiaotarola.com"
+        ]
