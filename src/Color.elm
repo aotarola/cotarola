@@ -1,6 +1,7 @@
 module Color exposing
     ( gray
     , lightViolet
+    , skyBlue
     , violet
     , white
     )
@@ -26,3 +27,8 @@ white =
 gray : Color
 gray =
     rgb255 34 34 68
+
+
+skyBlue : Color
+skyBlue =
+    rgb255 146 220 229
