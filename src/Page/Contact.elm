@@ -8,6 +8,7 @@ module Page.Contact exposing
     )
 
 import Browser.Dom exposing (Element)
+import Color exposing (violet)
 import Element
     exposing
         ( Element
@@ -41,7 +42,7 @@ init session =
 
 view : Model -> { title : String, content : Element msg }
 view _ =
-    { title = "Contact"
+    { title = "Contacto"
     , content = viewContent
     }
 
@@ -64,7 +65,12 @@ toSession { session } =
 
 viewContent : Element msg
 viewContent =
-    column [ width fill, spacing 20, Font.size 30 ]
-        [ el [ centerX ] <| text "CONTÁCTAME"
+    column
+        [ width fill
+        , spacing 20
+        , Font.size 30
+        , Font.color violet
+        ]
+        [ el [ centerX ] <| text "CONTÁCTAME 👇"
         , el [ centerX ] <| text "gracias@claudiaotarola.com"
         ]

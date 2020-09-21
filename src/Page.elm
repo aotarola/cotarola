@@ -37,7 +37,7 @@ type Page
 
 view : Page -> { title : String, content : Element msg } -> Document msg
 view page { title, content } =
-    { title = title
+    { title = "Claudia Otárola | " ++ title
     , body =
         [ layout
             [ Font.family [ Font.sansSerif ]

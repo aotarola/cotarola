@@ -7,7 +7,7 @@ module Page.Home exposing
     , view
     )
 
-import Color exposing (skyBlue)
+import Color exposing (skyBlue, violet)
 import Element
     exposing
         ( Element
@@ -30,7 +30,7 @@ import Element
         , width
         )
 import Element.Border as Border
-import Element.Font as Font
+import Element.Font as Font exposing (Font)
 import Session exposing (Session)
 
 
@@ -115,6 +115,7 @@ viewContent =
                 [ width <| maximum 600 fill
                 , centerX
                 , spacing 10
+                , Font.color violet
                 , Font.size 16
                 ]
                 [ el [ alignLeft, Font.size 70 ] <| text "S", text mainText ]
