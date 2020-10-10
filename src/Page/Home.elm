@@ -106,7 +106,7 @@ viewContent =
                 ]
               <|
                 image [ width fill, height fill ]
-                    { src = "/pachimascarasana.jpg"
+                    { src = "/claudia.jpg"
                     , description = "Pachimascarasana"
                     }
             ]
