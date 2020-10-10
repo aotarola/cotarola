@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '12.x'
       - name: Install Elm
-          run: npm i create-elm-app@5.6.0 -g
+        run: npm i create-elm-app@5.6.0 -g
       - run: elm-app build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
