@@ -1,5 +1,6 @@
 module Color exposing
-    ( background
+    ( alternateBackground
+    , background
     , primary
     , secondary
     , white
@@ -16,6 +17,11 @@ darkCyan =
 lightCyan : Color
 lightCyan =
     rgb255 131 244 250
+
+
+lighterCyan : Color
+lighterCyan =
+    rgb255 230 251 252
 
 
 white : Color
@@ -41,3 +47,8 @@ secondary =
 background : Color
 background =
     lightCyan
+
+
+alternateBackground : Color
+alternateBackground =
+    lighterCyan
