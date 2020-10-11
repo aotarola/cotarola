@@ -8,6 +8,7 @@ import Element
         ( Element
         , centerX
         , column
+        , el
         , fill
         , image
         , layout
@@ -48,7 +49,7 @@ view page { title, content } =
             column [ width fill ]
                 [ logo
                 , navBar page
-                , content
+                , el [ paddingXY 0 20, width fill ] content
                 ]
         ]
     }
