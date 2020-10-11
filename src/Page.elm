@@ -89,7 +89,7 @@ logo =
         socialRow =
             row [ alignRight, spacingXY 10 0, paddingXY 20 0 ]
                 [ newTabLink []
-                    { url = "https://www.google.com"
+                    { url = "http://facebook.com/clauotarola"
                     , label = facebookIcon
                     }
                 , newTabLink []
@@ -97,7 +97,7 @@ logo =
                     , label = whatsappIcon
                     }
                 , newTabLink []
-                    { url = "https://www.google.com"
+                    { url = "https://www.instagram.com/clau__otarola/"
                     , label = instagramIcon
                     }
                 ]
