@@ -2,13 +2,14 @@ module Page exposing (Page(..), view)
 
 import Browser exposing (Document)
 import Browser.Dom exposing (Element)
-import Color exposing (lightViolet, violet, white)
+import Color exposing (cyan, lightViolet, violet, white)
 import Element
     exposing
         ( Element
         , centerX
         , column
         , fill
+        , image
         , layout
         , link
         , mouseOver
@@ -44,10 +45,18 @@ view page { title, content } =
             , Font.size 16
             ]
           <|
-            column [ width fill, spacingXY 0 20 ]
-                [ navBar page, content ]
+            column [ width fill ]
+                [ logo
+                , navBar page
+                , content
+                ]
         ]
     }
+
+
+logo : Element msg
+logo =
+    row [ Background.color cyan, width fill ] [ image [] { src = "/logo.jpg", description = "Logo" } ]
 
 
 navBarLink : Page -> Route -> Element msg -> Element msg

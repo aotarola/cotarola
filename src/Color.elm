@@ -1,5 +1,6 @@
 module Color exposing
-    ( gray
+    ( cyan
+    , gray
     , lightViolet
     , skyBlue
     , violet
@@ -17,6 +18,11 @@ violet =
 lightViolet : Color
 lightViolet =
     rgb255 216 167 202
+
+
+cyan : Color
+cyan =
+    rgb255 131 244 250
 
 
 white : Color
