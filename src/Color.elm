@@ -1,45 +1,20 @@
 module Color exposing
-    ( cyan
-    , darkCyan
-    , darkCyan2
-    , darkGreen
-    , gray
-    , lightViolet
-    , skyBlue
-    , violet
+    ( background
+    , primary
+    , secondary
     , white
     )
 
 import Element exposing (Color, rgb255)
 
 
-violet : Color
-violet =
-    rgb255 131 33 97
-
-
-darkGreen : Color
-darkGreen =
-    rgb255 5 89 87
-
-
-darkCyan2 : Color
-darkCyan2 =
+darkCyan : Color
+darkCyan =
     rgb255 18 172 172
 
 
-darkCyan : Color
-darkCyan =
-    rgb255 151 211 211
-
-
-lightViolet : Color
-lightViolet =
-    rgb255 216 167 202
-
-
-cyan : Color
-cyan =
+lightCyan : Color
+lightCyan =
     rgb255 131 244 250
 
 
@@ -48,11 +23,21 @@ white =
     rgb255 255 255 255
 
 
-gray : Color
-gray =
-    rgb255 34 34 68
-
-
-skyBlue : Color
-skyBlue =
+cyan : Color
+cyan =
     rgb255 146 220 229
+
+
+primary : Color
+primary =
+    darkCyan
+
+
+secondary : Color
+secondary =
+    cyan
+
+
+background : Color
+background =
+    lightCyan

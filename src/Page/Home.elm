@@ -8,12 +8,6 @@ module Page.Home exposing
     )
 
 import Color
-    exposing
-        ( darkCyan2
-        , darkGreen
-        , skyBlue
-        , violet
-        )
 import Element
     exposing
         ( Element
@@ -101,7 +95,7 @@ viewContent =
             , centerY
             , spacing 10
             , Border.widthEach { right = 1, left = 0, top = 0, bottom = 0 }
-            , Border.color skyBlue
+            , Border.color Color.secondary
             ]
             [ el
                 [ centerX
@@ -121,7 +115,7 @@ viewContent =
                 [ width <| maximum 600 fill
                 , centerX
                 , spacing 10
-                , Font.color darkCyan2
+                , Font.color Color.primary
                 , Font.size 16
                 ]
                 [ el [ alignLeft, Font.size 70 ] <| text "S", text mainText ]

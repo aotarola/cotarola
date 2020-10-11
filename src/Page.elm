@@ -3,16 +3,6 @@ module Page exposing (Page(..), view)
 import Browser exposing (Document)
 import Browser.Dom exposing (Element)
 import Color
-    exposing
-        ( cyan
-        , darkCyan
-        , darkCyan2
-        , darkGreen
-        , lightViolet
-        , skyBlue
-        , violet
-        , white
-        )
 import Element
     exposing
         ( Element
@@ -66,21 +56,28 @@ view page { title, content } =
 
 logo : Element msg
 logo =
-    row [ Background.color cyan, width fill ] [ image [] { src = "/logo.jpg", description = "Logo" } ]
+    row
+        [ Background.color Color.background
+        , width fill
+        ]
+        [ image [] { src = "/logo.jpg", description = "Logo" } ]
 
 
 navBarLink : Page -> Route -> Element msg -> Element msg
 navBarLink page route label =
     let
         active =
-            Background.color darkCyan2
+            Background.color Color.primary
+
+        nonActive =
+            Background.color Color.secondary
 
         backgroundColor =
             if isActive page route then
                 active
 
             else
-                Background.color skyBlue
+                nonActive
     in
     link
         [ paddingXY 15 20
@@ -101,8 +98,9 @@ navBar page =
     in
     row
         [ width fill
-        , Background.color skyBlue
-        , Font.color white
+        , Background.color Color.secondary
+        , Font.bold
+        , Font.color Color.white
         ]
         [ linkTo Route.Home <| text "Inicio"
         , linkTo Route.Services <| text "Servicios"

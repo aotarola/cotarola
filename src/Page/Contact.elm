@@ -8,7 +8,7 @@ module Page.Contact exposing
     )
 
 import Browser.Dom exposing (Element)
-import Color exposing (violet)
+import Color
 import Element
     exposing
         ( Element
@@ -69,7 +69,7 @@ viewContent =
         [ width fill
         , spacing 20
         , Font.size 30
-        , Font.color violet
+        , Font.color Color.primary
         ]
         [ el [ centerX ] <| text "CONTÁCTAME 👇"
         , el [ centerX ] <| text "gracias@claudiaotarola.com"
