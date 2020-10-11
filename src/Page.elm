@@ -59,28 +59,37 @@ view page { title, content } =
     }
 
 
+socialShareIcon : String -> Element msg
+socialShareIcon key =
+    image [ width <| px 40, height <| px 40 ]
+        { src = "/" ++ key ++ ".svg"
+        , description = key
+        }
+
+
 facebookIcon : Element msg
 facebookIcon =
-    image [ width <| px 40, height <| px 40 ]
-        { src = "/facebook.svg"
-        , description = "Facebook"
-        }
+    socialShareIcon "facebook"
 
 
 whatsappIcon : Element msg
 whatsappIcon =
-    image [ width <| px 40, height <| px 40 ]
-        { src = "/whatsapp.svg"
-        , description = "Whatsapp"
-        }
+    socialShareIcon "whatsapp"
 
 
 instagramIcon : Element msg
 instagramIcon =
-    image [ width <| px 40, height <| px 40 ]
-        { src = "/instagram.svg"
-        , description = "Instagram"
-        }
+    socialShareIcon "instagram"
+
+
+tiktokIcon : Element msg
+tiktokIcon =
+    socialShareIcon "tiktok"
+
+
+twitterIcon : Element msg
+twitterIcon =
+    socialShareIcon "twitter"
 
 
 logo : Element msg
@@ -93,12 +102,20 @@ logo =
                     , label = facebookIcon
                     }
                 , newTabLink []
-                    { url = "https://wa.me/56991313337"
+                    { url = "https://wa.me/56932752284"
                     , label = whatsappIcon
                     }
                 , newTabLink []
                     { url = "https://www.instagram.com/clau__otarola/"
                     , label = instagramIcon
+                    }
+                , newTabLink []
+                    { url = "https://vm.tiktok.com/ZS9Uq8sQ/"
+                    , label = tiktokIcon
+                    }
+                , newTabLink []
+                    { url = "https://twitter.com/clau__otarola"
+                    , label = twitterIcon
                     }
                 ]
     in
