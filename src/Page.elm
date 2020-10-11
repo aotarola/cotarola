@@ -92,6 +92,11 @@ twitterIcon =
     socialShareIcon "twitter"
 
 
+youtubeIcon : Element msg
+youtubeIcon =
+    socialShareIcon "youtube"
+
+
 logo : Element msg
 logo =
     let
@@ -116,6 +121,10 @@ logo =
                 , newTabLink []
                     { url = "https://twitter.com/clau__otarola"
                     , label = twitterIcon
+                    }
+                , newTabLink []
+                    { url = "https://www.youtube.com/channel/UCL9mBa9UXELydAtdOPctiaQ"
+                    , label = youtubeIcon
                     }
                 ]
     in
