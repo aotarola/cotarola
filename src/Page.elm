@@ -16,6 +16,7 @@ import Element
         , layout
         , link
         , mouseOver
+        , newTabLink
         , paddingXY
         , px
         , row
@@ -58,22 +59,46 @@ view page { title, content } =
     }
 
 
+facebookIcon : Element msg
+facebookIcon =
+    image [ width <| px 40, height <| px 40 ]
+        { src = "/facebook.svg"
+        , description = "Facebook"
+        }
+
+
+whatsappIcon : Element msg
+whatsappIcon =
+    image [ width <| px 40, height <| px 40 ]
+        { src = "/whatsapp.svg"
+        , description = "Whatsapp"
+        }
+
+
+instagramIcon : Element msg
+instagramIcon =
+    image [ width <| px 40, height <| px 40 ]
+        { src = "/instagram.svg"
+        , description = "Instagram"
+        }
+
+
 logo : Element msg
 logo =
     let
         socialRow =
             row [ alignRight, spacingXY 10 0, paddingXY 20 0 ]
-                [ image [ width <| px 40, height <| px 40 ]
-                    { src = "/facebook.svg"
-                    , description = "Facebook"
+                [ newTabLink []
+                    { url = "https://www.google.com"
+                    , label = facebookIcon
                     }
-                , image [ width <| px 40, height <| px 40 ]
-                    { src = "/whatsapp.svg"
-                    , description = "Whatsapp"
+                , newTabLink []
+                    { url = "https://www.google.com"
+                    , label = whatsappIcon
                     }
-                , image [ width <| px 40, height <| px 40 ]
-                    { src = "/instagram.svg"
-                    , description = "Instagram"
+                , newTabLink []
+                    { url = "https://www.google.com"
+                    , label = instagramIcon
                     }
                 ]
     in
