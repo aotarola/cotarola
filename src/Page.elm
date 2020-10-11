@@ -6,6 +6,7 @@ import Color
     exposing
         ( cyan
         , darkCyan
+        , darkCyan2
         , darkGreen
         , lightViolet
         , skyBlue
@@ -72,7 +73,7 @@ navBarLink : Page -> Route -> Element msg -> Element msg
 navBarLink page route label =
     let
         active =
-            Background.color darkGreen
+            Background.color darkCyan2
 
         backgroundColor =
             if isActive page route then

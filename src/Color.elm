@@ -1,6 +1,7 @@
 module Color exposing
     ( cyan
     , darkCyan
+    , darkCyan2
     , darkGreen
     , gray
     , lightViolet
@@ -20,6 +21,11 @@ violet =
 darkGreen : Color
 darkGreen =
     rgb255 5 89 87
+
+
+darkCyan2 : Color
+darkCyan2 =
+    rgb255 18 172 172
 
 
 darkCyan : Color
