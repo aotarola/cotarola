@@ -93,7 +93,7 @@ logo =
                     , label = facebookIcon
                     }
                 , newTabLink []
-                    { url = "https://www.google.com"
+                    { url = "https://wa.me/56991313337"
                     , label = whatsappIcon
                     }
                 , newTabLink []
