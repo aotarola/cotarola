@@ -7,7 +7,7 @@ module Page.Home exposing
     , view
     )
 
-import Color exposing (skyBlue, violet)
+import Color exposing (darkGreen, skyBlue, violet)
 import Element
     exposing
         ( Element
@@ -115,7 +115,7 @@ viewContent =
                 [ width <| maximum 600 fill
                 , centerX
                 , spacing 10
-                , Font.color violet
+                , Font.color darkGreen
                 , Font.size 16
                 ]
                 [ el [ alignLeft, Font.size 70 ] <| text "S", text mainText ]

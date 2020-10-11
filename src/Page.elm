@@ -2,7 +2,16 @@ module Page exposing (Page(..), view)
 
 import Browser exposing (Document)
 import Browser.Dom exposing (Element)
-import Color exposing (cyan, lightViolet, violet, white)
+import Color
+    exposing
+        ( cyan
+        , darkCyan
+        , darkGreen
+        , lightViolet
+        , skyBlue
+        , violet
+        , white
+        )
 import Element
     exposing
         ( Element
@@ -62,16 +71,19 @@ logo =
 navBarLink : Page -> Route -> Element msg -> Element msg
 navBarLink page route label =
     let
+        active =
+            Background.color darkGreen
+
         backgroundColor =
             if isActive page route then
-                Background.color violet
+                active
 
             else
-                Background.color lightViolet
+                Background.color skyBlue
     in
     link
         [ paddingXY 15 20
-        , mouseOver [ Background.color violet ]
+        , mouseOver [ active ]
         , backgroundColor
         , centerX
         ]
@@ -88,10 +100,8 @@ navBar page =
     in
     row
         [ width fill
-        , Background.color lightViolet
-        , Border.color lightViolet
+        , Background.color skyBlue
         , Font.color white
-        , Font.size 16
         ]
         [ linkTo Route.Home <| text "Inicio"
         , linkTo Route.Services <| text "Servicios"

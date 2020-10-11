@@ -1,5 +1,7 @@
 module Color exposing
     ( cyan
+    , darkCyan
+    , darkGreen
     , gray
     , lightViolet
     , skyBlue
@@ -13,6 +15,16 @@ import Element exposing (Color, rgb255)
 violet : Color
 violet =
     rgb255 131 33 97
+
+
+darkGreen : Color
+darkGreen =
+    rgb255 5 89 87
+
+
+darkCyan : Color
+darkCyan =
+    rgb255 151 211 211
 
 
 lightViolet : Color
