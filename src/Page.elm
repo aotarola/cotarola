@@ -6,15 +6,18 @@ import Color
 import Element
     exposing
         ( Element
+        , alignRight
         , centerX
         , column
         , el
         , fill
+        , height
         , image
         , layout
         , link
         , mouseOver
         , paddingXY
+        , px
         , row
         , spacingXY
         , text
@@ -57,11 +60,30 @@ view page { title, content } =
 
 logo : Element msg
 logo =
+    let
+        socialRow =
+            row [ alignRight, spacingXY 10 0, paddingXY 20 0 ]
+                [ image [ width <| px 40, height <| px 40 ]
+                    { src = "/facebook.svg"
+                    , description = "Facebook"
+                    }
+                , image [ width <| px 40, height <| px 40 ]
+                    { src = "/whatsapp.svg"
+                    , description = "Whatsapp"
+                    }
+                , image [ width <| px 40, height <| px 40 ]
+                    { src = "/instagram.svg"
+                    , description = "Instagram"
+                    }
+                ]
+    in
     row
         [ Background.color Color.background
         , width fill
         ]
-        [ image [] { src = "/logo.jpg", description = "Logo" } ]
+        [ image [] { src = "/logo.jpg", description = "Logo" }
+        , socialRow
+        ]
 
 
 navBarLink : Page -> Route -> Element msg -> Element msg
