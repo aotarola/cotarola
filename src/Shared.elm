@@ -2,7 +2,7 @@ module Shared exposing (..)
 
 import Browser.Events exposing (onResize)
 import Browser.Navigation as Nav
-import Element exposing (Device, DeviceClass(..), Element, height)
+import Element exposing (Device, DeviceClass(..), Element)
 import Session
 
 
