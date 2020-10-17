@@ -33,7 +33,7 @@ import Element
 import Element.Border as Border
 import Element.Font as Font exposing (Font)
 import Session exposing (Session)
-import Shared
+import Shared exposing (isDesktop)
 
 
 
@@ -63,10 +63,11 @@ init shared =
     ( { shared = shared }, Cmd.none )
 
 
-view : Model -> { title : String, content : Element msg }
+view : Model -> { title : String, content : Element msg, isDesktop : Bool }
 view model =
     { title = "Inicio"
     , content = viewContent model
+    , isDesktop = Shared.isDesktop model.shared
     }
 
 

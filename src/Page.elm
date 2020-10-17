@@ -27,7 +27,9 @@ import Element
 import Element.Background as Background
 import Element.Border as Border
 import Element.Font as Font
+import Maybe exposing (withDefault)
 import Route exposing (Route)
+import Shared exposing (isDesktop)
 
 
 
@@ -41,8 +43,8 @@ type Page
     | Other
 
 
-view : Page -> { title : String, content : Element msg } -> Document msg
-view page { title, content } =
+view : Page -> { title : String, content : Element msg, isDesktop : Bool } -> Document msg
+view page { title, content, isDesktop } =
     { title = "Claudia Otárola | " ++ title
     , body =
         [ layout
@@ -51,7 +53,7 @@ view page { title, content } =
             ]
           <|
             column [ width fill ]
-                [ logo
+                [ logo isDesktop
                 , navBar page
                 , el [ paddingXY 0 20, width fill ] content
                 ]
@@ -97,43 +99,64 @@ youtubeIcon =
     socialShareIcon "youtube"
 
 
-logo : Element msg
-logo =
-    let
-        socialRow =
-            row [ alignRight, spacingXY 10 0, paddingXY 20 0 ]
-                [ newTabLink []
-                    { url = "http://facebook.com/clauotarola"
-                    , label = facebookIcon
-                    }
-                , newTabLink []
-                    { url = "https://wa.me/56932752284"
-                    , label = whatsappIcon
-                    }
-                , newTabLink []
-                    { url = "https://www.instagram.com/clau__otarola/"
-                    , label = instagramIcon
-                    }
-                , newTabLink []
-                    { url = "https://vm.tiktok.com/ZS9Uq8sQ/"
-                    , label = tiktokIcon
-                    }
-                , newTabLink []
-                    { url = "https://twitter.com/clau__otarola"
-                    , label = twitterIcon
-                    }
-                , newTabLink []
-                    { url = "https://www.youtube.com/channel/UCL9mBa9UXELydAtdOPctiaQ"
-                    , label = youtubeIcon
-                    }
-                ]
-    in
+logo : Bool -> Element msg
+logo isDesktop =
+    if isDesktop then
+        logoDesktop
+
+    else
+        logoMobile
+
+
+logoMobile : Element msg
+logoMobile =
+    column
+        [ Background.color Color.background
+        , width fill
+        ]
+        [ image [ centerX ] { src = "/logo.jpg", description = "" }
+        , row [ centerX, spacingXY 10 0, paddingXY 0 10 ] socialItems
+        ]
+
+
+socialItems : List (Element msg)
+socialItems =
+    [ newTabLink []
+        { url = "http://facebook.com/clauotarola"
+        , label = facebookIcon
+        }
+    , newTabLink []
+        { url = "https://wa.me/56932752284"
+        , label = whatsappIcon
+        }
+    , newTabLink []
+        { url = "https://www.instagram.com/clau__otarola/"
+        , label = instagramIcon
+        }
+    , newTabLink []
+        { url = "https://vm.tiktok.com/ZS9Uq8sQ/"
+        , label = tiktokIcon
+        }
+    , newTabLink []
+        { url = "https://twitter.com/clau__otarola"
+        , label = twitterIcon
+        }
+    , newTabLink []
+        { url = "https://www.youtube.com/channel/UCL9mBa9UXELydAtdOPctiaQ"
+        , label = youtubeIcon
+        }
+    ]
+
+
+logoDesktop : Element msg
+logoDesktop =
     row
         [ Background.color Color.background
         , width fill
         ]
         [ image [] { src = "/logo.jpg", description = "Logo" }
-        , socialRow
+        , row [ alignRight, spacingXY 10 0, paddingXY 20 0 ]
+            socialItems
         ]
 
 

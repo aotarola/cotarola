@@ -30,7 +30,7 @@ import Element
 import Element.Background as Background
 import Element.Font as Font
 import Session exposing (Session)
-import Shared
+import Shared exposing (isDesktop)
 
 
 type alias Model =
@@ -52,10 +52,11 @@ init shared =
     ( { shared = shared }, Cmd.none )
 
 
-view : Model -> { title : String, content : Element msg }
-view _ =
+view : Model -> { title : String, content : Element msg, isDesktop : Bool }
+view model =
     { title = "Servicios"
     , content = viewContent
+    , isDesktop = Shared.isDesktop model.shared
     }
 
 

@@ -47,10 +47,11 @@ subscriptions { shared } =
         |> Sub.map SharedMsg
 
 
-view : Model -> { title : String, content : Element msg }
-view _ =
+view : Model -> { title : String, content : Element msg, isDesktop : Bool }
+view model =
     { title = "Contacto"
     , content = viewContent
+    , isDesktop = Shared.isDesktop model.shared
     }
 
 
