@@ -2,7 +2,7 @@ module Page.Contact exposing
     ( Model
     , Msg
     , init
-    , toSession
+    , subscriptions
     , update
     , view
     )
@@ -22,22 +22,29 @@ import Element
         )
 import Element.Font as Font
 import Session exposing (Session)
+import Shared exposing (subscriptions)
 
 
 type alias Model =
-    { session : Session
+    { shared : Shared.Model
     }
 
 
 type Msg
-    = Something
+    = SharedMsg Shared.Msg
 
 
-init : Session -> ( Model, Cmd Msg )
-init session =
-    ( { session = session }
+init : Shared.Model -> ( Model, Cmd Msg )
+init shared =
+    ( { shared = shared }
     , Cmd.none
     )
+
+
+subscriptions : Model -> Sub Msg
+subscriptions { shared } =
+    Shared.subscriptions shared
+        |> Sub.map SharedMsg
 
 
 view : Model -> { title : String, content : Element msg }
@@ -50,13 +57,12 @@ view _ =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        Something ->
-            ( model, Cmd.none )
-
-
-toSession : Model -> Session
-toSession { session } =
-    session
+        SharedMsg subMsg ->
+            let
+                ( newSharedModel, newCmd ) =
+                    Shared.update subMsg model.shared
+            in
+            ( { model | shared = newSharedModel }, Cmd.map SharedMsg newCmd )
 
 
 

@@ -1,8 +1,10 @@
 module Main exposing (main)
 
 import Browser exposing (Document)
+import Browser.Events exposing (onResize)
 import Browser.Navigation as Nav
 import Html
+import Html.Attributes exposing (height, width)
 import Page
 import Page.Blank as Blank
 import Page.Contact as Contact
@@ -11,6 +13,7 @@ import Page.NotFound as NotFound
 import Page.Services as Services
 import Route exposing (Route)
 import Session exposing (Session)
+import Shared
 import Url exposing (Url)
 
 
@@ -19,43 +22,43 @@ import Url exposing (Url)
 
 
 type Model
-    = NotFound Session
+    = NotFound Shared.Model
     | Home Home.Model
     | Services Services.Model
     | Contact Contact.Model
-    | Redirect Session
+    | Redirect Shared.Model
 
 
 type alias Flags =
-    ()
+    { width : Int, height : Int }
 
 
 init : Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )
-init _ url navKey =
+init flags url navKey =
     changeRouteTo (Route.fromUrl url)
-        (Redirect <| Session.fromNavKey navKey)
+        (Redirect (Shared.init navKey flags))
 
 
 changeRouteTo : Maybe Route -> Model -> ( Model, Cmd Msg )
 changeRouteTo maybeRoute model =
     let
-        session =
-            toSession model
+        shared =
+            toShared model
     in
     case maybeRoute of
         Nothing ->
-            ( NotFound session, Cmd.none )
+            ( NotFound shared, Cmd.none )
 
         Just Route.Home ->
-            Home.init session
+            Home.init shared
                 |> updateWith Home GotHomeMsg model
 
         Just Route.Services ->
-            Services.init session
+            Services.init shared
                 |> updateWith Services GotServicesMsg model
 
         Just Route.Contact ->
-            Contact.init session
+            Contact.init shared
                 |> updateWith Contact GotContactMsg model
 
 
@@ -82,7 +85,7 @@ update msg model =
                             ( model, Cmd.none )
 
                         Just _ ->
-                            ( model, Nav.pushUrl (Session.navKey (toSession model)) <| Url.toString url )
+                            ( model, Nav.pushUrl (Shared.navKey (toShared model)) <| Url.toString url )
 
                 Browser.External href ->
                     ( model, Nav.load href )
@@ -106,23 +109,28 @@ update msg model =
             ( model, Cmd.none )
 
 
-toSession : Model -> Session
-toSession model =
+toShared : Model -> Shared.Model
+toShared model =
     case model of
-        NotFound session ->
-            session
+        NotFound shared ->
+            shared
 
-        Redirect session ->
-            session
+        Redirect shared ->
+            shared
 
         Home home ->
-            Home.toSession home
+            getShared home
 
         Services services ->
-            Services.toSession services
+            getShared services
 
         Contact contact ->
-            Contact.toSession contact
+            getShared contact
+
+
+getShared : { a | shared : Shared.Model } -> Shared.Model
+getShared { shared } =
+    shared
 
 
 updateWith : (subModel -> Model) -> (subMsg -> Msg) -> Model -> ( subModel, Cmd subMsg ) -> ( Model, Cmd Msg )
@@ -164,6 +172,29 @@ view model =
 
 
 
+---- SUBSCRIPTIONS ----
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    case model of
+        Home home ->
+            Home.subscriptions home
+                |> Sub.map GotHomeMsg
+
+        Services services ->
+            Services.subscriptions services
+                |> Sub.map GotServicesMsg
+
+        Contact contact ->
+            Contact.subscriptions contact
+                |> Sub.map GotContactMsg
+
+        _ ->
+            Sub.none
+
+
+
 ---- PROGRAM ----
 
 
@@ -173,7 +204,7 @@ main =
         { view = view
         , init = init
         , update = update
-        , subscriptions = always Sub.none
+        , subscriptions = subscriptions
         , onUrlChange = ChangedUrl
         , onUrlRequest = ClickedLink
         }

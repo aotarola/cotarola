@@ -2,7 +2,7 @@ module Page.Home exposing
     ( Model
     , Msg
     , init
-    , toSession
+    , subscriptions
     , update
     , view
     )
@@ -32,6 +32,7 @@ import Element
 import Element.Border as Border
 import Element.Font as Font exposing (Font)
 import Session exposing (Session)
+import Shared
 
 
 
@@ -39,20 +40,26 @@ import Session exposing (Session)
 
 
 type alias Model =
-    { session : Session }
+    { shared : Shared.Model }
 
 
 type Msg
-    = Something
+    = SharedMsg Shared.Msg
 
 
 
 -- PUBLIC
 
 
-init : Session -> ( Model, Cmd Msg )
-init session =
-    ( { session = session }, Cmd.none )
+subscriptions : Model -> Sub Msg
+subscriptions { shared } =
+    Shared.subscriptions shared
+        |> Sub.map SharedMsg
+
+
+init : Shared.Model -> ( Model, Cmd Msg )
+init shared =
+    ( { shared = shared }, Cmd.none )
 
 
 view : Model -> { title : String, content : Element msg }
@@ -65,13 +72,12 @@ view _ =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        Something ->
-            ( model, Cmd.none )
-
-
-toSession : Model -> Session
-toSession { session } =
-    session
+        SharedMsg subMsg ->
+            let
+                ( newSharedModel, newCmd ) =
+                    Shared.update subMsg model.shared
+            in
+            ( { model | shared = newSharedModel }, Cmd.map SharedMsg newCmd )
 
 
 
