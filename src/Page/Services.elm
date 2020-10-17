@@ -55,13 +55,36 @@ init shared =
 view : Model -> { title : String, content : Element msg, isDesktop : Bool }
 view model =
     { title = "Servicios"
-    , content = viewContent
+    , content = viewContent model
     , isDesktop = Shared.isDesktop model.shared
     }
 
 
-viewContent : Element msg
-viewContent =
+viewContent : Model -> Element msg
+viewContent { shared } =
+    if Shared.isDesktop shared then
+        desktopView
+
+    else
+        mobileView
+
+
+mobileView : Element msg
+mobileView =
+    column
+        [ width fill
+        , Font.color Color.primary
+        , paddingXY 10 0
+        ]
+        [ el [] (column [ spacingXY 0 10 ] spiritMentoringM)
+        , el [ Background.color Color.alternateBackground ] (column [ spacingXY 0 10 ] tarotReadingM)
+        , el [] (column [ spacingXY 0 10 ] yogaClassesM)
+        , el [ Background.color Color.alternateBackground ] (column [ spacingXY 0 10 ] personalClassesM)
+        ]
+
+
+desktopView : Element msg
+desktopView =
     column
         [ width fill
         , Font.color Color.primary
@@ -90,6 +113,24 @@ viewContent =
         ]
 
 
+yogaClassesM : List (Element msg)
+yogaClassesM =
+    let
+        img =
+            image [ centerX, width <| px 355, height <| px 197 ]
+                { src = "https://www.lagatahoracia.cl/wp-content/uploads/2016/07/yoga5-632x436.jpg"
+                , description = "Yoga"
+                }
+
+        content =
+            column [ spacingXY 0 10 ]
+                [ el [ Font.bold ] <| text "Clases de Yoga"
+                , paragraph [] [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus purus, vehicula sit amet porta sed, scelerisque non metus. Aliquam at eleifend erat. Integer ut ante sit amet mi porttitor porta in et massa. Mauris vehicula lectus ut purus dignissim volutpat. Ut id lobortis mauris. Duis rhoncus libero sed dolor lobortis condimentum. Suspendisse ultricies, odio vel dapibus laoreet, dolor lorem ornare nunc, quis scelerisque justo mauris at elit. Proin interdum at purus sed molestie. Proin iaculis tincidunt enim sed auctor." ]
+                ]
+    in
+    [ el [ centerX, width fill, height fill, paddingXY 0 10 ] content, el [ width fill, centerX ] img ]
+
+
 yogaClasses : List (Element msg)
 yogaClasses =
     let
@@ -102,6 +143,24 @@ yogaClasses =
         content =
             column [ spacingXY 0 10 ]
                 [ el [ Font.bold ] <| text "Clases de Yoga"
+                , paragraph [] [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus purus, vehicula sit amet porta sed, scelerisque non metus. Aliquam at eleifend erat. Integer ut ante sit amet mi porttitor porta in et massa. Mauris vehicula lectus ut purus dignissim volutpat. Ut id lobortis mauris. Duis rhoncus libero sed dolor lobortis condimentum. Suspendisse ultricies, odio vel dapibus laoreet, dolor lorem ornare nunc, quis scelerisque justo mauris at elit. Proin interdum at purus sed molestie. Proin iaculis tincidunt enim sed auctor." ]
+                ]
+    in
+    [ el [ centerX, width fill, height fill ] content, el [ width fill, centerX ] img ]
+
+
+spiritMentoringM : List (Element msg)
+spiritMentoringM =
+    let
+        img =
+            image [ centerX, width <| px 355, height <| px 197 ]
+                { src = "http://mscperu.org/espirit/Emiliano%20Jimenez/Espiritu/pic2_Espiritu/oracion05.png"
+                , description = "Espíritu"
+                }
+
+        content =
+            column [ spacingXY 0 10 ]
+                [ el [ Font.bold ] <| text "Mentoría Espiritual"
                 , paragraph [] [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus purus, vehicula sit amet porta sed, scelerisque non metus. Aliquam at eleifend erat. Integer ut ante sit amet mi porttitor porta in et massa. Mauris vehicula lectus ut purus dignissim volutpat. Ut id lobortis mauris. Duis rhoncus libero sed dolor lobortis condimentum. Suspendisse ultricies, odio vel dapibus laoreet, dolor lorem ornare nunc, quis scelerisque justo mauris at elit. Proin interdum at purus sed molestie. Proin iaculis tincidunt enim sed auctor." ]
                 ]
     in
@@ -124,6 +183,24 @@ spiritMentoring =
                 ]
     in
     [ el [ centerX, width fill, height fill ] content, el [ width fill, centerX ] img ]
+
+
+tarotReadingM : List (Element msg)
+tarotReadingM =
+    let
+        img =
+            image [ centerX, width <| px 355, height <| px 197 ]
+                { src = "https://nypost.com/wp-content/uploads/sites/2/2018/09/tarot-card-reading3.jpg?quality=90&strip=all&w=1236&h=820&crop=1"
+                , description = "Espíritu"
+                }
+
+        content =
+            column [ spacingXY 0 10 ]
+                [ el [ Font.bold ] <| text "Lectura de Tarot"
+                , paragraph [] [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus purus, vehicula sit amet porta sed, scelerisque non metus. Aliquam at eleifend erat. Integer ut ante sit amet mi porttitor porta in et massa. Mauris vehicula lectus ut purus dignissim volutpat. Ut id lobortis mauris. Duis rhoncus libero sed dolor lobortis condimentum. Suspendisse ultricies, odio vel dapibus laoreet, dolor lorem ornare nunc, quis scelerisque justo mauris at elit. Proin interdum at purus sed molestie. Proin iaculis tincidunt enim sed auctor." ]
+                ]
+    in
+    [ el [ centerX, width fill, height fill, paddingXY 0 10 ] content, el [ width fill, centerX ] img ]
 
 
 tarotReading : List (Element msg)
@@ -160,6 +237,24 @@ personalClasses =
                 ]
     in
     [ el [ width fill ] img, el [ centerX, width fill, height fill ] content ]
+
+
+personalClassesM : List (Element msg)
+personalClassesM =
+    let
+        img =
+            image [ centerX, width <| px 355, height <| px 197 ]
+                { src = "https://demo.posicionamiento-web.com.ar/wp-content/uploads/2020/04/Desarrollo-personal.png"
+                , description = "Taller"
+                }
+
+        content =
+            column [ spacingXY 0 10 ]
+                [ el [ Font.bold ] <| text "Talleres"
+                , paragraph [] [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus purus, vehicula sit amet porta sed, scelerisque non metus. Aliquam at eleifend erat. Integer ut ante sit amet mi porttitor porta in et massa. Mauris vehicula lectus ut purus dignissim volutpat. Ut id lobortis mauris. Duis rhoncus libero sed dolor lobortis condimentum. Suspendisse ultricies, odio vel dapibus laoreet, dolor lorem ornare nunc, quis scelerisque justo mauris at elit. Proin interdum at purus sed molestie. Proin iaculis tincidunt enim sed auctor." ]
+                ]
+    in
+    [ el [ centerX, width fill, height fill, paddingXY 0 10 ] content, el [ width fill, centerX ] img ]
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )

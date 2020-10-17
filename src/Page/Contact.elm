@@ -16,6 +16,7 @@ import Element
         , column
         , el
         , fill
+        , paddingXY
         , spacing
         , text
         , width
@@ -75,7 +76,7 @@ viewContent =
     column
         [ width fill
         , spacing 20
-        , Font.size 30
+        , Font.size 28
         , Font.color Color.primary
         ]
         [ el [ centerX ] <| text "CONTÁCTAME 👇"

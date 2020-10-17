@@ -27,6 +27,7 @@ import Element
         , px
         , row
         , spacing
+        , spacingXY
         , text
         , width
         )
@@ -141,8 +142,7 @@ mobileView =
     column
         [ width fill
         , centerY
-        , spacing 10
-        , paddingXY 10 0
+        , spacingXY 0 20
         ]
         [ el
             [ centerX
