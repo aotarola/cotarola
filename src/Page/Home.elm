@@ -100,7 +100,8 @@ viewContent { shared } =
 desktopView : Element msg
 desktopView =
     row
-        [ width fill
+        [ width <| px 1140
+        , centerX
         , padding 50
         , spacing 20
         ]
@@ -114,8 +115,8 @@ desktopView =
             [ el
                 [ centerX
                 , clip
-                , height <| px 600
-                , width <| px 600
+                , height <| px 500
+                , width <| px 500
                 , Border.rounded 500
                 ]
                 claudiaImg

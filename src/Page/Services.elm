@@ -154,7 +154,7 @@ desktopView =
                 serviceViewElement =
                     serviceElement alternate Desktop service
             in
-            el attrs <| row [ width fill ] serviceViewElement
+            el (centerX :: attrs) <| row [ width <| px 1140 ] serviceViewElement
 
         data =
             [ spiritMentoringService
