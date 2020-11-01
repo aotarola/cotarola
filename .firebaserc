@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "claudia-otarola-dev"
+    "default": "claudia-otarola-dev",
+    "production": "claudia-otarola"
   }
 }
