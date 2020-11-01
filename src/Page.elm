@@ -17,6 +17,7 @@ import Element
         , link
         , mouseOver
         , newTabLink
+        , padding
         , paddingXY
         , px
         , row
@@ -113,8 +114,10 @@ logoMobile =
     column
         [ Background.color Color.background
         , width fill
+        , padding 10
+        , spacingXY 0 10
         ]
-        [ image [ centerX ] { src = "/logo.jpg", description = "" }
+        [ image [ width <| px 300, centerX ] { src = "/logo.png", description = "" }
         , row [ centerX, spacingXY 10 0, paddingXY 0 10 ] socialItems
         ]
 
@@ -153,8 +156,10 @@ logoDesktop =
     row
         [ Background.color Color.background
         , width fill
+        , paddingXY 10 20
         ]
-        [ image [] { src = "/logo.jpg", description = "Logo" }
+        [ image [ width <| px 300 ]
+            { src = "/logo.png", description = "Logo" }
         , row [ alignRight, spacingXY 10 0, paddingXY 20 0 ]
             socialItems
         ]
