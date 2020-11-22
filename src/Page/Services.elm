@@ -186,7 +186,7 @@ yogaService : Mode -> ServiceData msg
 yogaService mode =
     { picture =
         image (imageServiceAttrs mode)
-            { src = "https://www.lagatahoracia.cl/wp-content/uploads/2016/07/yoga5-632x436.jpg"
+            { src = "/yoga.jpg"
             , description = "Yoga"
             }
     , title = text "Clases de Yoga"
@@ -198,7 +198,7 @@ spiritMentoringService : Mode -> ServiceData msg
 spiritMentoringService mode =
     { picture =
         image (imageServiceAttrs mode)
-            { src = "http://mscperu.org/espirit/Emiliano%20Jimenez/Espiritu/pic2_Espiritu/oracion05.png"
+            { src = "/mentoria.jpg"
             , description = "Espíritu"
             }
     , title = text "Mentoría Espiritual"
@@ -222,7 +222,7 @@ tarotReadingService : Mode -> ServiceData msg
 tarotReadingService mode =
     { picture =
         image (imageServiceAttrs mode)
-            { src = "https://nypost.com/wp-content/uploads/sites/2/2018/09/tarot-card-reading3.jpg?quality=90&strip=all&w=1236&h=820&crop=1"
+            { src = "/oraculo.jpg"
             , description = "Tarot"
             }
     , title = text "Lectura de Oráculos"
