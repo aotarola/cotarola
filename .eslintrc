@@ -1,0 +1,9 @@
+{
+  "extends": "groupon",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true
+  }
+}

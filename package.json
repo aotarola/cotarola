@@ -1,0 +1,35 @@
+{
+  "name": "cotarola",
+  "version": "1.0.0",
+  "description": "This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "v12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aotarola/cotarola.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aotarola/cotarola/issues"
+  },
+  "homepage": "https://github.com/aotarola/cotarola#readme",
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-groupon": "^10.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.0"
+  }
+}
