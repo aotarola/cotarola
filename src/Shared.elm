@@ -2,6 +2,7 @@ module Shared exposing (..)
 
 import Browser.Events exposing (onResize)
 import Browser.Navigation as Nav
+import Dict exposing (Dict)
 import Element exposing (Device, DeviceClass(..), Element)
 import Session
 
@@ -9,12 +10,14 @@ import Session
 type alias Flags =
     { width : Int
     , height : Int
+    , assets : List ( String, String )
     }
 
 
 type alias Model =
     { session : Session.Session
     , device : Device
+    , assets : Dict String String
     }
 
 
@@ -43,7 +46,18 @@ update msg model =
 
 init : Nav.Key -> Flags -> Model
 init key flags =
-    Model (Session.init key) <| Element.classifyDevice flags
+    let
+        assets =
+            flags.assets
+                |> Dict.fromList
+    in
+    Model (Session.init key) (Element.classifyDevice flags) assets
+
+
+getAsset : String -> Model -> String
+getAsset name model =
+    Dict.get name model.assets
+        |> Maybe.withDefault ""
 
 
 navKey : Model -> Nav.Key

@@ -92,14 +92,14 @@ view model =
 viewContent : Model -> Element msg
 viewContent { shared } =
     if Shared.isDesktop shared then
-        desktopView
+        desktopView shared
 
     else
-        mobileView
+        mobileView shared
 
 
-mobileView : Element msg
-mobileView =
+mobileView : Shared.Model -> Element msg
+mobileView shared =
     let
         viewService index service =
             let
@@ -120,10 +120,10 @@ mobileView =
             el attrs <| column [ spacingXY 0 10 ] serviceViewElement
 
         data =
-            [ spiritMentoringService
-            , tarotReadingService
-            , yogaService
-            , personalClassesService
+            [ spiritMentoringService shared
+            , tarotReadingService shared
+            , yogaService shared
+            , personalClassesService shared
             ]
                 |> List.indexedMap viewService
     in
@@ -135,8 +135,8 @@ mobileView =
         data
 
 
-desktopView : Element msg
-desktopView =
+desktopView : Shared.Model -> Element msg
+desktopView shared =
     let
         viewService index service =
             let
@@ -157,10 +157,10 @@ desktopView =
             el (centerX :: attrs) <| row [ width <| px 1140 ] serviceViewElement
 
         data =
-            [ spiritMentoringService
-            , tarotReadingService
-            , yogaService
-            , personalClassesService
+            [ spiritMentoringService shared
+            , tarotReadingService shared
+            , yogaService shared
+            , personalClassesService shared
             ]
                 |> List.indexedMap viewService
     in
@@ -182,11 +182,11 @@ imageServiceAttrs mode =
             [ centerX, width <| px 355, height <| px 197 ]
 
 
-yogaService : Mode -> ServiceData msg
-yogaService mode =
+yogaService : Shared.Model -> Mode -> ServiceData msg
+yogaService shared mode =
     { picture =
         image (imageServiceAttrs mode)
-            { src = "/yoga.jpg"
+            { src = Shared.getAsset "yoga" shared
             , description = "Yoga"
             }
     , title = text "Clases de Yoga"
@@ -194,11 +194,11 @@ yogaService mode =
     }
 
 
-spiritMentoringService : Mode -> ServiceData msg
-spiritMentoringService mode =
+spiritMentoringService : Shared.Model -> Mode -> ServiceData msg
+spiritMentoringService shared mode =
     { picture =
         image (imageServiceAttrs mode)
-            { src = "/mentoria.jpg"
+            { src = Shared.getAsset "mentorship" shared
             , description = "Espíritu"
             }
     , title = text "Mentoría Espiritual"
@@ -206,8 +206,8 @@ spiritMentoringService mode =
     }
 
 
-personalClassesService : Mode -> ServiceData msg
-personalClassesService mode =
+personalClassesService : Shared.Model -> Mode -> ServiceData msg
+personalClassesService shared mode =
     { picture =
         image (imageServiceAttrs mode)
             { src = "https://demo.posicionamiento-web.com.ar/wp-content/uploads/2020/04/Desarrollo-personal.png"
@@ -218,11 +218,11 @@ personalClassesService mode =
     }
 
 
-tarotReadingService : Mode -> ServiceData msg
-tarotReadingService mode =
+tarotReadingService : Shared.Model -> Mode -> ServiceData msg
+tarotReadingService shared mode =
     { picture =
         image (imageServiceAttrs mode)
-            { src = "/oraculo.jpg"
+            { src = Shared.getAsset "oracle" shared
             , description = "Tarot"
             }
     , title = text "Lectura de Oráculos"

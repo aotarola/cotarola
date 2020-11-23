@@ -29,11 +29,8 @@ type Model
     | Redirect Shared.Model
 
 
-type alias Flags =
-    { width : Int, height : Int }
 
-
-init : Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )
+init : Shared.Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url navKey =
     changeRouteTo (Route.fromUrl url)
         (Redirect (Shared.init navKey flags))
@@ -198,7 +195,7 @@ subscriptions model =
 ---- PROGRAM ----
 
 
-main : Program Flags Model Msg
+main : Program Shared.Flags Model Msg
 main =
     Browser.application
         { view = view

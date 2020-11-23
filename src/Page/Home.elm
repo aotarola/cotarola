@@ -91,14 +91,14 @@ update msg model =
 viewContent : Model -> Element msg
 viewContent { shared } =
     if Shared.isDesktop shared then
-        desktopView
+        desktopView shared
 
     else
-        mobileView
+        mobileView shared
 
 
-desktopView : Element msg
-desktopView =
+desktopView : Shared.Model -> Element msg
+desktopView shared =
     row
         [ width <| px 1140
         , centerX
@@ -119,17 +119,19 @@ desktopView =
                 , width <| px 500
                 , Border.rounded 500
                 ]
-                claudiaImg
+              <|
+                claudiaImg <|
+                    Shared.getAsset "home" shared
             ]
         , column [ width fill, centerY, spacing 10 ]
             [ mainParagraph ]
         ]
 
 
-claudiaImg : Element msg
-claudiaImg =
+claudiaImg : String -> Element msg
+claudiaImg src =
     image [ width fill, height fill ]
-        { src = "/claudia.jpg"
+        { src = src
         , description = "Claudia Otarola"
         }
 
@@ -149,8 +151,8 @@ mainParagraph =
         [ el [ alignLeft, Font.size 70 ] <| text "S", text mainText ]
 
 
-mobileView : Element msg
-mobileView =
+mobileView : Shared.Model -> Element msg
+mobileView shared =
     column
         [ width fill
         , centerY
@@ -164,6 +166,8 @@ mobileView =
             , width <| px 300
             , Border.rounded 500
             ]
-            claudiaImg
+          <|
+            claudiaImg <|
+                Shared.getAsset "home" shared
         , mainParagraph
         ]
