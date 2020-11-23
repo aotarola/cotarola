@@ -1,25 +1,22 @@
+/* eslint-disable node/no-unsupported-features/es-syntax */
+// eslint-disable-next-line node/no-unsupported-features/es-syntax
 import { Elm } from './Main.elm';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker.js';
 //assets
-import home from './assets/claudia.jpg'
-import oracle from './assets/oraculo.jpg'
-import yoga from './assets/yoga.jpg'
-import mentorship from './assets/mentoria.jpg'
+import home from './assets/claudia.jpg';
+import oracle from './assets/oraculo.jpg';
+import yoga from './assets/yoga.jpg';
+import mentorship from './assets/mentoria.jpg';
 
-const assets = [
-    ['home',home]
-  , ['oracle',oracle]
-  , ['yoga',yoga]
-  , ['mentorship',mentorship]
-]
+const assets = [home, oracle, yoga, mentorship];
 
 Elm.Main.init({
   node: document.getElementById('root'),
   flags: {
     width: window.innerWidth,
     height: window.innerHeight,
-    assets
-  }
+    assets,
+  },
 });
 
 // If you want your app to work offline and load faster, you can change

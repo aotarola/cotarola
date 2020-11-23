@@ -10,7 +10,7 @@ import Session
 type alias Flags =
     { width : Int
     , height : Int
-    , assets : List ( String, String )
+    , assets : List String
     }
 
 
@@ -47,8 +47,23 @@ update msg model =
 init : Nav.Key -> Flags -> Model
 init key flags =
     let
+        toTuple asset =
+            let
+                assetKey =
+                    asset
+                        |> String.split "/"
+                        |> List.reverse
+                        |> List.head
+                        |> Maybe.withDefault "not-found"
+                        |> String.split "."
+                        |> List.head
+                        |> Maybe.withDefault "not-found"
+            in
+            ( assetKey, asset )
+
         assets =
             flags.assets
+                |> List.map toTuple
                 |> Dict.fromList
     in
     Model (Session.init key) (Element.classifyDevice flags) assets

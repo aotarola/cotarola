@@ -121,7 +121,7 @@ desktopView shared =
                 ]
               <|
                 claudiaImg <|
-                    Shared.getAsset "home" shared
+                    Shared.getAsset "claudia" shared
             ]
         , column [ width fill, centerY, spacing 10 ]
             [ mainParagraph ]
@@ -168,6 +168,6 @@ mobileView shared =
             ]
           <|
             claudiaImg <|
-                Shared.getAsset "home" shared
+                Shared.getAsset "claudia" shared
         , mainParagraph
         ]

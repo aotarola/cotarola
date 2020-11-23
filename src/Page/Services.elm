@@ -198,7 +198,7 @@ spiritMentoringService : Shared.Model -> Mode -> ServiceData msg
 spiritMentoringService shared mode =
     { picture =
         image (imageServiceAttrs mode)
-            { src = Shared.getAsset "mentorship" shared
+            { src = Shared.getAsset "mentoria" shared
             , description = "Espíritu"
             }
     , title = text "Mentoría Espiritual"
@@ -222,7 +222,7 @@ tarotReadingService : Shared.Model -> Mode -> ServiceData msg
 tarotReadingService shared mode =
     { picture =
         image (imageServiceAttrs mode)
-            { src = Shared.getAsset "oracle" shared
+            { src = Shared.getAsset "oraculo" shared
             , description = "Tarot"
             }
     , title = text "Lectura de Oráculos"

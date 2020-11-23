@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable node/no-unsupported-features/es-syntax */
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
