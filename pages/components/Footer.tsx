@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent } from "react";
 
 const Footer: FunctionComponent = () => {
   return (
@@ -142,7 +142,7 @@ const Footer: FunctionComponent = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

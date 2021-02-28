@@ -1,25 +1,32 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent } from "react";
 
 const services = [
   {
-    id: 'abre-tus-alas',
-    name: 'Programa Abre tus Alas',
-    whatsIncluded: ['12 sesiones de terapia de 1 hora', '12 sesiones de clases grupales de yoga'],
-    price: '$650.000 CLP / $970 USD',
+    id: "abre-tus-alas",
+    name: "Programa Abre tus Alas",
+    whatsIncluded: [
+      "12 sesiones de terapia de 1 hora",
+      "12 sesiones de clases grupales de yoga",
+    ],
+    price: "$650.000 CLP / $970 USD",
   },
   {
-    id: 'reconocimento-de-tu-poder-interior',
-    name: 'Reconocimiento de tu Poder Interior',
-    whatsIncluded: ['4 sesiones de terapia', '1 hora de duracion por sesion'],
-    price: '$272.000 CLP / $440 USD',
+    id: "reconocimento-de-tu-poder-interior",
+    name: "Reconocimiento de tu Poder Interior",
+    whatsIncluded: ["4 sesiones de terapia", "1 hora de duracion por sesion"],
+    price: "$272.000 CLP / $440 USD",
   },
   {
-    id: 'yoga',
-    name: 'Clases de Yoga (Multiple)',
-    whatsIncluded: ['4 clases mensuales', '8 clases mensuales', '12 clases mensuales'],
-    price: 'Desde $12.000 CLP / $22 USD',
+    id: "yoga",
+    name: "Clases de Yoga (Multiple)",
+    whatsIncluded: [
+      "4 clases mensuales",
+      "8 clases mensuales",
+      "12 clases mensuales",
+    ],
+    price: "Desde $12.000 CLP / $22 USD",
   },
-]
+];
 
 const Pricing: FunctionComponent = () => {
   return (
@@ -38,7 +45,9 @@ const Pricing: FunctionComponent = () => {
               className="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
             >
               <div className="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-                <div className="p-8 text-3xl font-bold text-center border-b-4">{service.name}</div>
+                <div className="p-8 text-3xl font-bold text-center border-b-4">
+                  {service.name}
+                </div>
                 <ul className="w-full text-center text-sm">
                   {service.whatsIncluded.map((include) => (
                     <li key="include" className="border-b py-4">
@@ -62,7 +71,7 @@ const Pricing: FunctionComponent = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Pricing
+export default Pricing;
