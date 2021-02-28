@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'react'
-import Image from 'next/image'
 
 const Services: FunctionComponent = () => {
   return (
@@ -27,7 +26,7 @@ const Services: FunctionComponent = () => {
             </p>
           </div>
           <div className="w-full sm:w-1/2 p-6">
-            <Image
+            <img
               className="w-full sm:h-64 mx-auto rounded-full"
               width={495}
               height={327}
@@ -37,7 +36,7 @@ const Services: FunctionComponent = () => {
         </div>
         <div className="flex flex-wrap flex-col-reverse sm:flex-row">
           <div className="w-full sm:w-1/2 p-6 mt-6">
-            <Image
+            <img
               className="w-5/6 sm:h-64 mx-auto rounded-full"
               width={495}
               height={327}
@@ -85,7 +84,7 @@ const Services: FunctionComponent = () => {
             </p>
           </div>
           <div className="w-full sm:w-1/2 p-6">
-            <Image
+            <img
               className="w-full sm:h-64 mx-auto rounded-full"
               width={495}
               height={327}
