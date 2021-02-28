@@ -1,0 +1,29 @@
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(146, 220, 229, 1) 0%,
+    rgba(131, 244, 250, 1) 65%,
+    rgba(146, 220, 229, 1) 100%
+  );
+}
+
+.bg-green-custom {
+  background-color: rgb(146, 220, 229);
+}
+
+.bg-custom {
+  --overlay-image: url('/hero-bg.jpg');
+  --overlay-colors: rgba(146, 220, 229, 0.7), rgba(131, 224, 250, 0.8);
+}
+
+:target {
+  scroll-margin-top: 3rem;
+}
+
+@font-face {
+  font-family: 'VeryBerry';
+  src: url('/fonts/VeryBerry/VeryBerryPro-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
