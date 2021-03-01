@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent } from 'react'
 
 const Services: FunctionComponent = () => {
   return (
@@ -16,15 +16,13 @@ const Services: FunctionComponent = () => {
               Programa &quot;Abre tus Alas&quot;
             </h3>
             <p className="text-gray-600 mb-8">
-              Creé este programa con una base, raíz y esencia en la mentoría y
-              el yoga para generar una terapia y estudio de ti mism@ y a través
-              del yoga armonices, integres y conectes con tu sabiduría. Con este
-              servicio abro un espacio sagrado para acompañarte y guiarte en tu
-              proceso de autoconocimiento y transformación para que tú vayas
-              reconociendo tus propias herramientas desde tu sabiduría interior
-              y así evolucionar desde tu expansión de consciencia encaminándote
-              hacia dónde te lleva tu alma. Este programa está principalmente
-              enfocado en personas que se sienten inseguras y desvalorizadas.
+              Creé este programa con una base, raíz y esencia en la mentoría y el yoga para generar
+              una terapia y estudio de ti mism@ y a través del yoga armonices, integres y conectes
+              con tu sabiduría. Con este servicio abro un espacio sagrado para acompañarte y guiarte
+              en tu proceso de autoconocimiento y transformación para que tú vayas reconociendo tus
+              propias herramientas desde tu sabiduría interior y así evolucionar desde tu expansión
+              de consciencia encaminándote hacia dónde te lleva tu alma. Este programa está
+              principalmente enfocado en personas que se sienten inseguras y desvalorizadas.
             </p>
           </div>
           <div className="w-full sm:w-1/2 p-6">
@@ -32,6 +30,7 @@ const Services: FunctionComponent = () => {
               className="w-full sm:h-64 mx-auto rounded-full"
               width={495}
               height={327}
+              alt="mentoria"
               src="/mentoria.jpg"
             />
           </div>
@@ -42,6 +41,7 @@ const Services: FunctionComponent = () => {
               className="w-5/6 sm:h-64 mx-auto rounded-full"
               width={495}
               height={327}
+              alt="oraculo"
               src="/oraculo.jpg"
             />
           </div>
@@ -51,27 +51,21 @@ const Services: FunctionComponent = () => {
                 Reconocimento de tu Poder Interior
               </h3>
               <p className="text-gray-600 mb-8">
-                Es un paquete de 4 sesiones de terapia de 1 hora donde vamos a
-                identificar:
-                <ul>
-                  <li>El porqué de tu situación actual.</li>
-                  <li>
-                    A qué debes renunciar para conectar con tu poder interior y
-                    autosanación.
-                  </li>
-                  <li>Conectar con tu confianza y seguridad.</li>
-                  <li>
-                    Resignificar la relación contigo mism@ y con los demás.
-                  </li>
-                </ul>
-                Solo para quienes terminaron el programa &quot;Abre tus
-                Alas&quot; y quieran seguir en su camino de autoconocimento
-                tiene un descuento exclusevi equivalente al 15% en este mágico
-                servicio por todas las veces que quisieran tomarlo.
+                Es un paquete de 4 sesiones de terapia de 1 hora donde vamos a identificar:
+              </p>
+              <ul className="text-gray-600 ml-4 mb-8 list-disc">
+                <li>El porqué de tu situación actual.</li>
+                <li>A qué debes renunciar para conectar con tu poder interior y autosanación.</li>
+                <li>Conectar con tu confianza y seguridad.</li>
+                <li>Resignificar la relación contigo mism@ y con los demás.</li>
+              </ul>
+              <p className="text-gray-600 mb-8">
+                Solo para quienes terminaron el programa &quot;Abre tus Alas&quot; y quieran seguir
+                en su camino de autoconocimento tiene un descuento exclusevi equivalente al 15% en
+                este mágico servicio por todas las veces que quisieran tomarlo.
               </p>
               <p className="text-gray-600 mb-8">
-                Mi mision es acompañarte y ayudarte a recordar quien realmente
-                eres.
+                Mi mision es acompañarte y ayudarte a recordar quien realmente eres.
               </p>
             </div>
           </div>
@@ -79,23 +73,18 @@ const Services: FunctionComponent = () => {
 
         <div className="flex flex-wrap">
           <div className="w-5/6 sm:w-1/2 p-6">
-            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Clases de Yoga
-            </h3>
+            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Clases de Yoga</h3>
             <p className="text-gray-600 mb-8">
-              De lo que he estudiado sobre este estilo de vida es que el yoga va
-              más allá que un simple ejercicio físico, yoga es conexión y unión
-              con el dios/divinidad/universo/consciencia infinita (o como
-              prefieras nombrarle) que habita en nosotros, es sentirte parte del
-              todo, es hacer la práctica con consciencia y nos lleva a vivir
-              nuestra vida así. Algunos de sus tantos beneficios es que nos
-              ayuda a conectar con algunas emociones bloqueadas a través de la
-              estimulación de nuestros puntos energéticos o chakras como también
-              a mejorar la comunicación con nuestro cuerpo. Antes de iniciar tu
-              práctica siempre recuerda que toda asana (postura) está perfecta
-              cuando la disfrutas. Te invito a ver el siguiente video donde
-              revisamos algunos ajustes de las asanas más comunes que realizamos
-              en clases.
+              De lo que he estudiado sobre este estilo de vida es que el yoga va más allá que un
+              simple ejercicio físico, yoga es conexión y unión con el
+              dios/divinidad/universo/consciencia infinita (o como prefieras nombrarle) que habita
+              en nosotros, es sentirte parte del todo, es hacer la práctica con consciencia y nos
+              lleva a vivir nuestra vida así. Algunos de sus tantos beneficios es que nos ayuda a
+              conectar con algunas emociones bloqueadas a través de la estimulación de nuestros
+              puntos energéticos o chakras como también a mejorar la comunicación con nuestro
+              cuerpo. Antes de iniciar tu práctica siempre recuerda que toda asana (postura) está
+              perfecta cuando la disfrutas. Te invito a ver el siguiente video donde revisamos
+              algunos ajustes de las asanas más comunes que realizamos en clases.
             </p>
           </div>
           <div className="w-full sm:w-1/2 p-6">
@@ -109,7 +98,7 @@ const Services: FunctionComponent = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

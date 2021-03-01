@@ -1,10 +1,10 @@
-import { FunctionComponent } from "react";
-import NavBar from "./components/NavBar";
-import Header from "./components/Header";
-import Services from "./components/Services";
-import Pricing from "./components/Pricing";
-import ContactMe from "./components/ContactMe";
-import Footer from "./components/Footer";
+import { FunctionComponent } from 'react'
+import NavBar from './components/NavBar'
+import Header from './components/Header'
+import Services from './components/Services'
+import Pricing from './components/Pricing'
+import ContactMe from './components/ContactMe'
+import Footer from './components/Footer'
 
 const Home: FunctionComponent = () => {
   return (
@@ -20,7 +20,7 @@ const Home: FunctionComponent = () => {
       <ContactMe />
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
