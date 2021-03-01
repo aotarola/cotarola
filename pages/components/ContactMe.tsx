@@ -15,7 +15,7 @@ const options = [
 const ContactMe: FunctionComponent = () => {
   const [yogaOptionActive, setYogaOption] = useState(false)
 
-  const optionClicked = (event): void => {
+  const optionClicked = (event: any): void => {
     setYogaOption(event.target.value === 'yoga')
   }
 
