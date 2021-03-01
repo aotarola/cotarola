@@ -18,12 +18,54 @@ const Services: FunctionComponent = () => {
             <p className="text-gray-600 mb-8">
               Creé este programa con una base, raíz y esencia en la mentoría y el yoga para generar
               una terapia y estudio de ti mism@ y a través del yoga armonices, integres y conectes
-              con tu sabiduría. Con este servicio abro un espacio sagrado para acompañarte y guiarte
-              en tu proceso de autoconocimiento y transformación para que tú vayas reconociendo tus
-              propias herramientas desde tu sabiduría interior y así evolucionar desde tu expansión
-              de consciencia encaminándote hacia dónde te lleva tu alma. Este programa está
-              principalmente enfocado en personas que se sienten inseguras y desvalorizadas.
+              con tu sabiduría.
             </p>
+            <p className="text-gray-600 mb-8">
+              Con este servicio abro un espacio sagrado para acompañarte y guiarte en tu proceso de
+              autoconocimiento y transformación para que tú vayas reconociendo tus propias
+              herramientas desde tu sabiduría interior y así evolucionar desde tu expansión de
+              consciencia encaminándote hacia donde te lleva tu alma.
+            </p>
+            <p className="text-gray-600 mb-8">
+              Este programa está principalmente enfocado en personas que se sienten inseguras y
+              desvalorizadas.
+            </p>
+            <ul className="text-gray-600 ml-4 mb-8 list-disc">
+              <li>Vas a conectar con tu poder autosanador.</li>
+              <li>Vas a conectar con tu seguridad, confianza y plenitud.</li>
+              <li>Vas a comprender tu mente y cómo enfocarla.</li>
+              <li>
+                Vas a aprender a utilizar todas tus proyecciones para nutrir con amor y luz esos
+                lugares que has olvidado en ti.
+              </li>
+              <li>
+                Vas a conectar con tu poder creador y con las revelaciones que tu sabiduría interna
+                tiene para ti.
+              </li>
+              <li>
+                Vas a ser capaz de encontrar una solución acertada a cada situación de alta tensión
+                que aparezca en tu vida.
+              </li>
+              <li>Vas a resignificar la relación contigo mism@ y con tu entorno.</li>
+              <li>Verás como todas tus relaciones interpersonales van a mejorar.</li>
+              <li>Aprenderás a abrir y cerrar ciclos sanamente.</li>
+              <li>
+                Vas a conectar con tu misión de vida y vas a permitirte seguir la ruta de tu alma
+                desde tu amor y aportando al mundo lo que más necesitamos, tu luz y autenticidad.
+              </li>
+              <li>No seas víctima de tu vida y conviértete en PROTAGONISTA. </li>
+              <li>No esperes más por tu cambio, estás a un paso de darle el giro a tu vida. </li>
+              <li>Ámate tanto y haz la inversión más importante de tu vida.</li>
+            </ul>
+            <p className="text-gray-600 mb-8">
+              Mi misión es acompañarte y ayudarte a cumplir la tuya que es ABRIR TUS ALAS.
+            </p>
+            <a
+              href="https://www.dropbox.com/s/o6cj29rzl7qhcb5/PROGRAMA%20ABRE%20TUS%20ALAS.pdf?dl=0"
+              className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+              Mas información
+            </a>
           </div>
           <div className="w-full sm:w-1/2 p-6">
             <img
@@ -61,7 +103,7 @@ const Services: FunctionComponent = () => {
               </ul>
               <p className="text-gray-600 mb-8">
                 Solo para quienes terminaron el programa &quot;Abre tus Alas&quot; y quieran seguir
-                en su camino de autoconocimento tiene un descuento exclusevi equivalente al 15% en
+                en su camino de autoconocimento tiene un descuento exclusivo equivalente al 15% en
                 este mágico servicio por todas las veces que quisieran tomarlo.
               </p>
               <p className="text-gray-600 mb-8">
@@ -75,21 +117,44 @@ const Services: FunctionComponent = () => {
           <div className="w-5/6 sm:w-1/2 p-6">
             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Clases de Yoga</h3>
             <p className="text-gray-600 mb-8">
-              De lo que he estudiado sobre este estilo de vida es que el yoga va más allá que un
+              De lo que he estudiado sobre esta forma de vida es que el yoga va más allá que un
               simple ejercicio físico, yoga es conexión y unión con el
-              dios/divinidad/universo/consciencia infinita (o como prefieras nombrarle) que habita
-              en nosotros, es sentirte parte del todo, es hacer la práctica con consciencia y nos
-              lleva a vivir nuestra vida así. Algunos de sus tantos beneficios es que nos ayuda a
-              conectar con algunas emociones bloqueadas a través de la estimulación de nuestros
-              puntos energéticos o chakras como también a mejorar la comunicación con nuestro
-              cuerpo. Antes de iniciar tu práctica siempre recuerda que toda asana (postura) está
-              perfecta cuando la disfrutas. Te invito a ver el siguiente video donde revisamos
-              algunos ajustes de las asanas más comunes que realizamos en clases.
+              dios/divinidad/universo/consciencia infinita (o como prefieras llamarle) que habita en
+              nosotros.
+            </p>
+
+            <p className="text-gray-600 mb-8">
+              Yoga es la ciencia de la consciencia individual que alcanza la comunión con la
+              consciencia última.
+            </p>
+
+            <p className="text-gray-600 mb-8">
+              Yoga es sentirte parte del todo, es hacer la práctica con conciencia y nos lleva a
+              vivir nuestra vida así.
+            </p>
+
+            <p className="text-gray-600 mb-8">
+              Algunos de sus tantos beneficios es que nos ayuda a conectar con algunas emociones
+              bloqueadas a través de la estimulación de nuestros puntos energéticos o chakras como
+              también a mejorar la comunicación con nuestro cuerpo y purificar y clarificar nuestra
+              mente y pensamientos. A nivel físico ayuda a mejorar dolores musculares, lumbares,
+              tensiones, tránsito grastrointestinal entre otros.
+            </p>
+
+            <p className="text-gray-600 mb-8">
+              Antes de iniciar tu práctica siempre recuerda que toda asana (postura) está perfecta
+              cuando la disfrutas.
+            </p>
+
+            <p className="text-gray-600 mb-8">
+              Te invito a tomar una clase de regalo para que sientas si conectas con mi forma de
+              entregar el yoga.
             </p>
           </div>
           <div className="w-full sm:w-1/2 p-6">
             <img
               className="w-full sm:h-64 mx-auto rounded-full"
+              alt="yoga"
               width={495}
               height={327}
               src="/yoga.jpg"
