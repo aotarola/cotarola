@@ -34,7 +34,7 @@ const NavBar: FunctionComponent = () => {
   })
 
   const textColor = shouldChangeColor ? 'text-gray-800' : 'text-white'
-  const backgroundColor = shouldChangeColor ? 'bg-green-custom' : ''
+  const backgroundColor = shouldChangeColor ? 'gradient' : ''
   return (
     <nav id="header" className={`fixed w-full z-30 top-0 text-white ${backgroundColor}`}>
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -43,7 +43,7 @@ const NavBar: FunctionComponent = () => {
             className={`${textColor} no-underline hover:no-underline font-bold text-2xl lg:text-4xl`}
             href="#"
           >
-            <img alt="Logo" className="h-8 px-2 fill-current inline" src="/logo.svg" />
+            <img alt="Logo" className="h-10 px-2 fill-current inline" src="/logo.svg" />
             INICIO
           </a>
         </div>
@@ -63,7 +63,7 @@ const NavBar: FunctionComponent = () => {
           </button>
         </div>
         <div
-          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 ${backgroundColor} lg:bg-transparent text-black p-4 lg:p-0 z-20`}
+          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
@@ -91,10 +91,10 @@ const NavBar: FunctionComponent = () => {
           </ul>
           <a
             id="navAction"
-            href="#contactme"
-            className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            href="https://wa.me/56932752284"
+            className="focus:outline-none focus:shadow-outline transform transition hover:scale-125 duration-300 ease-in-out"
           >
-            Contáctame
+            <img alt="Whatsapp" src="/whatsapp.svg" className="h-10 px-2 fill-current inline" />
           </a>
         </div>
       </div>
