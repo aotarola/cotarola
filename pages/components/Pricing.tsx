@@ -43,7 +43,7 @@ const Pricing: FunctionComponent = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
+              className="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
             >
               <div className="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
                 <div className="p-8 text-3xl font-bold text-center border-b-4">{service.name}</div>
