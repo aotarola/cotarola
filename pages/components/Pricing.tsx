@@ -60,9 +60,9 @@ const Pricing: FunctionComponent = () => {
               <div className="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
                 <div className="p-8 text-3xl font-bold text-center border-b-4">{service.name}</div>
                 <ul className="w-full text-center text-sm">
-                  {service.whatsIncluded.map((include) => (
+                  {service.whatsIncluded.map((includes) => (
                     <li key="include" className="border-b py-4">
-                      {include}
+                      {includes}
                     </li>
                   ))}
                 </ul>
