@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         veryberry: ['VeryBerry'],
+        italianno: ['Italianno'],
       },
     },
   },

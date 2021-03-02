@@ -7,7 +7,7 @@ const Header: FunctionComponent = () => {
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <h1 className="my-4 text-5xl font-bold leading-tight">Claudia Otárola</h1>
-            <p className="font-veryberry leading-normal text-4xl mb-8">
+            <p className="font-italianno leading-normal text-6xl mb-8">
               Mentora en autosanación espiritual
             </p>
           </div>
