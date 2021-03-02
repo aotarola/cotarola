@@ -1,5 +1,11 @@
 import { FunctionComponent } from 'react'
+const toCalendly = (): void => {
+  window.location.href = 'https://calendly.com/claudiaotarola'
+}
 
+const toForm = (): void => {
+  window.location.href = '#contactme'
+}
 const services = [
   {
     id: 'abre-tus-alas',
@@ -9,7 +15,9 @@ const services = [
       '12 sesiones de clases grupales de yoga',
       'Incluye sesión "Resurgimiento de tu vuelo" gratis',
     ],
+    redirect: toCalendly,
     price: '$650.000 CLP / $970 USD',
+    actionText: 'Inscribir',
   },
   {
     id: 'reconocimento-de-tu-poder-interior',
@@ -19,13 +27,17 @@ const services = [
       '1 hora de duración por sesión',
       'Incluye sesión "Resurgimiento de tu vuelo" gratis',
     ],
+    redirect: toCalendly,
     price: '$272.000 CLP / $440 USD',
+    actionText: 'Inscribir',
   },
   {
     id: 'yoga',
     name: 'Clases de Yoga (Múltiple)',
     whatsIncluded: ['4 clases mensuales', '8 clases mensuales', '12 clases mensuales'],
+    redirect: toForm,
     price: 'Desde $12.000 CLP / $22 USD',
+    actionText: 'Contáctame',
   },
 ]
 
@@ -61,16 +73,10 @@ const Pricing: FunctionComponent = () => {
                 </div>
                 <div className="flex items-center justify-center">
                   <button
-                    onClick={() => {
-                      if (service.id !== 'yoga') {
-                        window.location.href = 'https://calendly.com/claudiaotarola'
-                      } else {
-                        window.location.href = '#contactme'
-                      }
-                    }}
+                    onClick={service.redirect}
                     className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                   >
-                    Inscribir
+                    {service.actionText}
                   </button>
                 </div>
               </div>
