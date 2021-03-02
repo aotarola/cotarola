@@ -62,29 +62,25 @@ const Services: FunctionComponent = () => {
             </p>
             <a
               href="https://www.dropbox.com/s/o6cj29rzl7qhcb5/PROGRAMA%20ABRE%20TUS%20ALAS.pdf?dl=0"
-              className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              className="mx-auto lg:mx-0 mb-8 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
             >
               Mas información
             </a>
           </div>
-          <div className="w-full sm:w-1/2 p-6">
+          <div className="w-full sm:w-1/2">
             <img
-              className="w-full sm:h-64 mx-auto rounded-full"
-              width={495}
-              height={327}
-              alt="mentoria"
-              src="/mentoria.jpg"
+              className="w-5/6 sm:h-64 mx-auto rounded-full"
+              alt="Abre tus Alas"
+              src="/abre-tus-alas.jpg"
             />
           </div>
         </div>
         <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div className="w-full sm:w-1/2 p-6 mt-6">
+          <div className="w-full sm:w-1/2">
             <img
               className="w-5/6 sm:h-64 mx-auto rounded-full"
-              width={495}
-              height={327}
-              alt="oraculo"
-              src="/oraculo.jpg"
+              alt="Reconocimento de tu Poder Interior"
+              src="/mentoria.jpg"
             />
           </div>
           <div className="w-full sm:w-1/2 p-6 mt-6">
@@ -146,19 +142,13 @@ const Services: FunctionComponent = () => {
               cuando la disfrutas.
             </p>
 
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600">
               Te invito a tomar una clase de regalo para que sientas si conectas con mi forma de
               entregar el yoga.
             </p>
           </div>
-          <div className="w-full sm:w-1/2 p-6">
-            <img
-              className="w-full sm:h-64 mx-auto rounded-full"
-              alt="yoga"
-              width={495}
-              height={327}
-              src="/yoga.jpg"
-            />
+          <div className="w-full sm:w-1/2">
+            <img className="w-5/6 sm:h-64 mx-auto rounded-full" alt="yoga" src="/yoga.jpg" />
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const services = [
   },
   {
     id: 'yoga',
-    name: 'Clases de Yoga (Multiple)',
+    name: 'Clases de Yoga (Múltiple)',
     whatsIncluded: ['4 clases mensuales', '8 clases mensuales', '12 clases mensuales'],
     price: 'Desde $12.000 CLP / $22 USD',
   },
