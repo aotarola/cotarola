@@ -16,8 +16,8 @@ const corsOptions = {
 const jsonParser = bodyParser.json()
 
 express()
-  .use(jsonParser)
   .use(cors(corsOptions))
+  .use(jsonParser)
   .post('/', async (req, res) => {
     const { name, email, option } = req.body
     try {
