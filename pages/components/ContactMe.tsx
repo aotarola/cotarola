@@ -1,6 +1,6 @@
 import { ChangeEvent, FunctionComponent, FormEvent, useState } from 'react'
 
-const HEROKU_BASEURL = 'http://localhost:5000'
+const HEROKU_BASEURL = 'https://cotarola-api.herokuapp.com'
 
 type NetworkNotAsked = {
   state: 'notAsked'
