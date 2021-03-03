@@ -1,18 +1,21 @@
 import { ChangeEvent, FunctionComponent, FormEvent, useState } from 'react'
 
-const HEROKU_BASEURL = 'somewhere'
+const HEROKU_BASEURL = 'http://localhost:5000'
 
 type NetworkNotAsked = {
   state: 'notAsked'
+  data: null
 }
 
 type NetworkLoading = {
   state: 'loading'
+  data: null
 }
 
 type NetworkError = {
   state: 'error'
   code: number
+  data: string
 }
 
 type NetworkSuccess = {
@@ -28,7 +31,10 @@ const ContactMe: FunctionComponent = () => {
   const [currentName, setName] = useState(null)
   const [currentEmail, setEmail] = useState(null)
   const [currentOption, setOption] = useState(null)
-  const [networkState, setNetworkState] = useState<NetworkState>({ state: 'notAsked' })
+  const [networkState, setNetworkState] = useState<NetworkState>({
+    state: 'notAsked',
+    data: null,
+  })
 
   // TODO: Error message, maybe have 4 states: not asked, loaded, failure, success
   const optionSelected = (event): void => {
@@ -53,17 +59,24 @@ const ContactMe: FunctionComponent = () => {
         })
 
         const data = await response.json()
-        if (data.ok) {
-          setNetworkState({ state: 'success', data })
+        if (data.status !== 'ok') {
+          throw data
         }
-      } catch {
-        setNetworkState({ state: 'error', code: 400 })
+        setNetworkState({ state: 'success', data })
+      } catch (error) {
+        let message: string
+        if (error.status === 'Member Exists') {
+          message =
+            'Ya te encuentras registrad@, si tienes alguna consulta, no dudes en enviar un correo a gracias@claudiaotarola.com'
+        }
+        setNetworkState({ state: 'error', code: 400, data: message })
       }
     }
   }
 
   const CurrentActivity = () => {
-    switch (networkState.state) {
+    const { state, data: message } = networkState
+    switch (state) {
       case 'notAsked':
         return (
           <h3 className="my-4 text-3xl leading-tight">
@@ -72,7 +85,9 @@ const ContactMe: FunctionComponent = () => {
         )
 
       case 'error':
-        return (
+        return message ? (
+          <h3 className="my-4 text-3xl leading-tight">{message}</h3>
+        ) : (
           <h3 className="my-4 text-3xl leading-tight">
             Oops, no pudimos enviar el formulario
             <span className="px-2" role="img" aria-label="cry">
