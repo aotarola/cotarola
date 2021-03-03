@@ -16,9 +16,8 @@ const corsOptions = {
 const jsonParser = bodyParser.json()
 
 express()
-  .use(cors())
   .use(jsonParser)
-  .post('/', async (req, res) => {
+  .post('/', cors(), async (req, res) => {
     const { name, email, option } = req.body
     try {
       const resp = await mailchimp.request({
