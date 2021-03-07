@@ -10,7 +10,7 @@ const { MAILCHIMP_API_KEY, MEMBERS_LIST_ID } = process.env
 const mailchimp = new Mailchimp(MAILCHIMP_API_KEY)
 
 const corsOptions = {
-  origin: ['https://dev.claudiaotarola.com', 'https://claudiaotarola.com', 'http://127.0.0.1:3000'],
+  origin: '*',
   credentials: true,
 }
 
