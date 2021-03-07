@@ -23,7 +23,7 @@ express()
   .post('/', async (req, res) => {
     const { name, email, option } = req.body
     try {
-      res.header('Acess-Control-Allow-Origin', '*')
+      res.header('Access-Control-Allow-Origin', '*')
       await mailchimp.request({
         method: 'post',
         path: `lists/${MEMBERS_LIST_ID}/members`,
