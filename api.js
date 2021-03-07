@@ -24,7 +24,7 @@ express()
   })
   .get('/favicon.ico', (req, res) => res.status(204))
   .get('/', (req, res) => {
-    res.status(200).json({ status: 'ok' })
+    res.status(200).json({ status: 'all good' })
   })
   .post('/', async (req, res) => {
     const { name, email, option } = req.body
