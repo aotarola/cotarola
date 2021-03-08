@@ -67,18 +67,18 @@ const Services: FunctionComponent = () => {
               Mas información
             </a>
           </div>
-          <div className="w-full sm:w-1/2">
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
             <img
-              className="w-5/6 sm:h-64 mx-auto rounded-full"
+              className="sm:h-96 mx-auto rounded-full"
               alt="Abre tus Alas"
               src="/abre-tus-alas.jpg"
             />
           </div>
         </div>
         <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div className="w-full sm:w-1/2">
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
             <img
-              className="w-5/6 sm:h-64 mx-auto rounded-full"
+              className="sm:h-96 mx-auto rounded-full"
               alt="Reconocimento de tu Poder Interior"
               src="/mentoria.jpg"
             />
@@ -102,7 +102,7 @@ const Services: FunctionComponent = () => {
                 en su camino de autoconocimento tiene un descuento exclusivo equivalente al 15% en
                 este mágico servicio por todas las veces que quisieran tomarlo.
               </p>
-              <p className="text-gray-600 mb-8">
+              <p className="text-gray-600">
                 Mi mision es acompañarte y ayudarte a recordar quien realmente eres.
               </p>
             </div>
@@ -147,8 +147,8 @@ const Services: FunctionComponent = () => {
               entregar el yoga.
             </p>
           </div>
-          <div className="w-full sm:w-1/2">
-            <img className="w-5/6 sm:h-64 mx-auto rounded-full" alt="yoga" src="/yoga.jpg" />
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+            <img className="sm:h-96 mx-auto rounded-full" alt="yoga" src="/yoga.jpg" />
           </div>
         </div>
       </div>
