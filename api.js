@@ -17,11 +17,8 @@ const corsOptions = {
 const jsonParser = bodyParser.json()
 
 express()
+  .use(cors(corsOptions))
   .use(jsonParser)
-  .use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*')
-    next()
-  })
   .get('/favicon.ico', (req, res) => res.status(204))
   .get('/', (req, res) => {
     res.status(200).json({ status: 'all good' })
