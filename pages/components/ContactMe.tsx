@@ -171,9 +171,9 @@ const ContactMe: FunctionComponent = () => {
                 className="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               >
                 <option value="">Selecciona una opción</option>
-                <option value="4-clases">4 clases mensuales</option>
-                <option value="8-clases">8 clases mensuales</option>
-                <option value="12-clases">12 clases mensuales</option>
+                <option value="yoga-4-clases">4 clases mensuales</option>
+                <option value="yoga-8-clases">8 clases mensuales</option>
+                <option value="yoga-12-clases">12 clases mensuales</option>
               </select>
             </label>
           </div>
