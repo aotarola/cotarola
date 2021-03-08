@@ -25,6 +25,7 @@ function useDocumentScroll(callback: (ar0: IProps) => void): void {
 
 const NavBar: FunctionComponent = () => {
   const [shouldChangeColor, setShouldSetColor] = useState(false)
+  const [shouldShowMenu, setShowMenu] = useState(false)
   const MINIMUM_SCROLL = 10
 
   useDocumentScroll((callbackData) => {
@@ -32,6 +33,10 @@ const NavBar: FunctionComponent = () => {
     const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
     setShouldSetColor(isMinimumScrolled)
   })
+
+  const toggleMenu = (): void => {
+    setShowMenu((curr) => !curr)
+  }
 
   const textColor = shouldChangeColor ? 'text-gray-800' : 'text-white'
   const backgroundColor = shouldChangeColor ? 'gradient' : ''
@@ -50,6 +55,7 @@ const NavBar: FunctionComponent = () => {
         <div className="block lg:hidden pr-4">
           <button
             id="nav-toggle"
+            onClick={toggleMenu}
             className="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             <svg
@@ -63,7 +69,9 @@ const NavBar: FunctionComponent = () => {
           </button>
         </div>
         <div
-          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
+          className={`w-full bg-custom flex-grow lg:flex lg:items-center lg:w-auto ${
+            !shouldShowMenu && 'hidden'
+          } gradient mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
