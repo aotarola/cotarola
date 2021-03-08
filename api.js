@@ -11,7 +11,6 @@ const mailchimp = new Mailchimp(MAILCHIMP_API_KEY)
 
 const corsOptions = {
   origin: '*',
-  credentials: true,
 }
 
 const jsonParser = bodyParser.json()
