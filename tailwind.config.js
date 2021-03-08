@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        veryberry: ['VeryBerry'],
         italianno: ['Italianno'],
+        paratype: ['ParaType'],
       },
     },
   },

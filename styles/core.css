@@ -21,16 +21,16 @@
 }
 
 @font-face {
-  font-family: 'VeryBerry';
-  src: url('/fonts/VeryBerry/VeryBerryPro-Regular.otf');
+  font-family: 'Italianno';
+  src: url('/fonts/Italianno/Italianno-Regular.ttf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Italianno';
-  src: url('/fonts/Italianno/Italianno-Regular.ttf');
+  font-family: 'ParaType';
+  src: url('/fonts/ParaType/PTSerif-Regular.ttf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
