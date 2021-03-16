@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 import NavBar from './components/NavBar'
 import Header from './components/Header'
+import AboutMe from './components/AboutMe'
 import Services from './components/Services'
 import Pricing from './components/Pricing'
 import ContactMe from './components/ContactMe'
@@ -14,6 +15,7 @@ const Home: FunctionComponent = () => {
     >
       <NavBar />
       <Header />
+      <AboutMe />
       <Services />
       <Pricing />
       <img alt="bottom gradient" src="/grad.svg" />
