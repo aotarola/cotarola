@@ -5,9 +5,7 @@ const Footer: FunctionComponent = () => {
   const closeIt = (): void => {
     setShouldShow((curr) => !curr)
   }
-  const showPrice = (): void => {
-    window.location = '#abre-tus-alas'
-  }
+
   return (
     shouldShow && (
       <div className="mx-auto sm:w-3/4 md:w-2/4 fixed inset-x-0 bottom-5 gradient rounded-lg">
