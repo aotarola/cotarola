@@ -27,7 +27,7 @@ const Footer: FunctionComponent = () => {
           <div className="w-full flex flex-col md:flex-row ">
             <div className="flex-1">
               <p className="uppercase text-indigo-800 font-bold align-middle text-center py-6">
-                <a href="#pricing">
+                <a href="#abre-tus-alas">
                   ¡Aprovecha programa &quot;Abre tus alas&quot; con 20% de descuento solo hasta el
                   30 de Abril!
                 </a>

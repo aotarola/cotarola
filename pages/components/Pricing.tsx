@@ -54,6 +54,7 @@ const Pricing: FunctionComponent = () => {
         <div className="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
           {services.map((service) => (
             <div
+              id={service.id}
               key={service.id}
               className="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
             >
