@@ -12,10 +12,11 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/VeryBerry/VeryBerryPro-Regular.otf"
+            href="/fonts/Italianno/Italianno-Regular.ttf"
             as="font"
             crossOrigin=""
           />
+          <link rel="preload" href="/fonts/ParaType/PTSerif-Regular.ttf" as="font" crossOrigin="" />
         </Head>
         <body>
           <Main />

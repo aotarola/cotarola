@@ -5,6 +5,9 @@ const Footer: FunctionComponent = () => {
   const closeIt = (): void => {
     setShouldShow((curr) => !curr)
   }
+  const showPrice = (): void => {
+    window.location = '#abre-tus-alas'
+  }
   return (
     shouldShow && (
       <div className="mx-auto sm:w-3/4 md:w-2/4 fixed inset-x-0 bottom-5 gradient rounded-lg">
@@ -26,7 +29,10 @@ const Footer: FunctionComponent = () => {
           <div className="w-full flex flex-col md:flex-row ">
             <div className="flex-1">
               <p className="uppercase text-indigo-800 font-bold align-middle text-center py-6">
-                ¡Aprovecha el 20% de descuento solo hasta el 30 de Abril!
+                <a href="#pricing">
+                  ¡Aprovecha programa &quot;Abre tus alas&quot; con 20% de descuento solo hasta el
+                  30 de Abril!
+                </a>
               </p>
             </div>
           </div>
