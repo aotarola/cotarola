@@ -62,7 +62,7 @@ const Services: FunctionComponent = () => {
             </p>
             <a
               href="https://www.dropbox.com/s/o6cj29rzl7qhcb5/PROGRAMA%20ABRE%20TUS%20ALAS.pdf?dl=0"
-              className="mx-auto lg:mx-0 mb-8 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              className="inline-block mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
             >
               Mas información
             </a>
@@ -79,32 +79,48 @@ const Services: FunctionComponent = () => {
           <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
             <img
               className="sm:h-96 mx-auto rounded-full"
-              alt="Reconocimento de tu Poder Interior"
+              alt="Masterclass mensuales"
               src="/mentoria.jpg"
             />
           </div>
           <div className="w-full sm:w-1/2 p-6 mt-6">
             <div className="align-middle">
               <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Reconocimento de tu Poder Interior
+                Masterclass mensuales
               </h3>
               <p className="text-gray-600 mb-8">
-                Es un paquete de 4 sesiones de terapia de 1 hora donde vamos a identificar:
+                Cada mes estaré dictando una exclusiva Masterclass en vivo vía Zoom con un tema a
+                desarrollar compuesto de material previo de trabajo y herramientas para que hagas tu
+                trabajo personal. Siempre estaré entregándoles información y contenido exclusivo y
+                de calidad.
               </p>
-              <ul className="text-gray-600 ml-4 mb-8 list-disc">
-                <li>El porqué de tu situación actual.</li>
-                <li>A qué debes renunciar para conectar con tu poder interior y autosanación.</li>
-                <li>Conectar con tu confianza y seguridad.</li>
-                <li>Resignificar la relación contigo mism@ y con los demás.</li>
-              </ul>
               <p className="text-gray-600 mb-8">
-                Solo para quienes terminaron el programa &quot;Abre tus Alas&quot; y quieran seguir
-                en su camino de autoconocimento tiene un descuento exclusivo equivalente al 15% en
-                este mágico servicio por todas las veces que quisieran tomarlo.
+                No te puedes perder esta oportunidad de crecimiento en conjunto. Nunca olvides que
+                tus preguntas nutren las clase.
+              </p>
+              <p className="text-gray-600 mb-8">
+                Solo para las personas que estén activas en el programa “Abre tus Alas” tendrán
+                acceso gratuito.
               </p>
               <p className="text-gray-600">
-                Mi mision es acompañarte y ayudarte a recordar quien realmente eres.
+                Puedes revisar mi Masterclass Gratuita de Febrero 2021, ¡no dejes de hacer el
+                poderoso ejercicio de esta clase!.
               </p>
+              <a
+                href="https://youtu.be/nXvkmEO5gRM"
+                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
+              >
+                Mas información
+              </a>
+              <p className="text-gray-600">
+                Y el material de apoyo para tu estudio en el siguiente enlace
+              </p>
+              <a
+                href="https://www.dropbox.com/sh/s5es3babvja3kus/AAC36cCg5T0G5YT7LHQmt21La?dl=0"
+                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              >
+                ¡Descárgalo ya!
+              </a>
             </div>
           </div>
         </div>

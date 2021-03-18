@@ -2,13 +2,24 @@ import { FunctionComponent, useState } from 'react'
 
 const Footer: FunctionComponent = () => {
   const [shouldShow, setShouldShow] = useState(true)
-  const closeIt = (): void => {
+  const closeIt = (e): void => {
     setShouldShow((curr) => !curr)
+    e.stopPropagation()
+  }
+
+  const goPricing = (): void => {
+    window.location.href = '#abre-tus-alas'
   }
 
   return (
     shouldShow && (
-      <div className="mx-auto sm:w-3/4 md:w-2/4 fixed inset-x-0 bottom-5 gradient rounded-lg">
+      <div
+        className="mx-auto w-5/6 md:w-2/4 fixed inset-x-0 bottom-5 gradient rounded-lg"
+        role="button"
+        tabIndex={0}
+        onClick={goPricing}
+        onKeyDown={goPricing}
+      >
         <button className="absolute top-0 right-0 cursor-pointer" onClick={closeIt}>
           <svg
             className="h-6 w-6 text-gray-500"
@@ -27,10 +38,8 @@ const Footer: FunctionComponent = () => {
           <div className="w-full flex flex-col md:flex-row ">
             <div className="flex-1">
               <p className="uppercase text-indigo-800 font-bold align-middle text-center py-6">
-                <a href="#abre-tus-alas">
-                  ¡Aprovecha programa &quot;Abre tus alas&quot; con 20% de descuento solo hasta el
-                  30 de Abril!
-                </a>
+                ¡Aprovecha programa &quot;Abre tus alas&quot; con 20% de descuento solo hasta el 30
+                de Abril!
               </p>
             </div>
           </div>

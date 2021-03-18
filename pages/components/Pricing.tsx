@@ -20,15 +20,11 @@ const services = [
     actionText: 'Inscribir',
   },
   {
-    id: 'reconocimento-de-tu-poder-interior',
-    name: 'Reconocimiento de tu Poder Interior',
-    whatsIncluded: [
-      '4 sesiones de terapia',
-      '1 hora de duración por sesión',
-      'Incluye sesión "Resurgimiento de tu vuelo" gratis',
-    ],
+    id: 'masterclass',
+    name: 'Masterclass',
+    whatsIncluded: ['Clase presencial*', 'Puedes conectar de manera remota via zoom'],
     redirect: toCalendly,
-    price: '$272.000 CLP / $440 USD',
+    price: 'Desde $30.000 CLP / $44 USD',
     actionText: 'Inscribir',
   },
   {
