@@ -71,7 +71,9 @@ const NavBar: FunctionComponent = () => {
         <div
           className={`w-full bg-custom flex-grow lg:flex lg:items-center lg:w-auto ${
             !shouldShowMenu && 'hidden'
-          }  mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
+          }  ${
+            shouldShowMenu && 'gradient'
+          } mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
