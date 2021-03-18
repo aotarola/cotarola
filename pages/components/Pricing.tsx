@@ -20,11 +20,19 @@ const services = [
     actionText: 'Inscribir',
   },
   {
-    id: 'masterclass',
-    name: 'Masterclass',
+    id: 'masterclass-vivo',
+    name: 'Masterclass en Vivo',
     whatsIncluded: ['Clase presencial*', 'Puedes conectar de manera remota via zoom'],
     redirect: toCalendly,
-    price: 'Desde $30.000 CLP / $44 USD',
+    price: '$30.000 CLP / $44 USD',
+    actionText: 'Inscribir',
+  },
+  {
+    id: 'masterclass-grabada',
+    name: 'Masterclass Grabada',
+    whatsIncluded: ['Acceso exclusivo a mis clases anteriores', 'Sigue el curso a tu tiempo'],
+    redirect: toCalendly,
+    price: '$35.000 CLP / $50 USD',
     actionText: 'Inscribir',
   },
   {

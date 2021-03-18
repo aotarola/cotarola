@@ -57,7 +57,7 @@ const Services: FunctionComponent = () => {
               <li>No esperes más por tu cambio, estás a un paso de darle el giro a tu vida. </li>
               <li>Ámate tanto y haz la inversión más importante de tu vida.</li>
             </ul>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600">
               Mi misión es acompañarte y ayudarte a cumplir la tuya que es ABRIR TUS ALAS.
             </p>
             <a
