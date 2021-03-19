@@ -127,7 +127,7 @@ const Services: FunctionComponent = () => {
 
         <div className="flex flex-wrap">
           <div className="w-5/6 sm:w-1/2 p-6">
-            <h3 className="text-3xl text-custom-yellow-400 font-bold leading-none mb-3">
+            <h3 className="text-3xl text-custom-yellow-500 font-bold leading-none mb-3">
               Clases de Yoga
             </h3>
             <p className="text-custom-yellow-400 mb-8">
