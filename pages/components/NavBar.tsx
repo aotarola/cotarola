@@ -1,8 +1,11 @@
-import { FunctionComponent, useRef, useEffect, useState } from 'react'
+import { FunctionComponent, useRef, useEffect, useState, MutableRefObject, MouseEvent } from 'react'
 
-function useOutsideClick(ref, callback: (ar0: void) => void): void {
-  const handleClick = (e) => {
-    if (ref.current && !ref.current.contains(e.target)) {
+function useOutsideClick(
+  ref: MutableRefObject<HTMLDivElement>,
+  callback: (ar0: void) => void
+): void {
+  const handleClick = (e: MouseEvent): void => {
+    if (ref.current && !ref.current.contains(e.target as Element)) {
       callback()
     }
   }
@@ -18,18 +21,18 @@ function useOutsideClick(ref, callback: (ar0: void) => void): void {
 
 const NavBar: FunctionComponent = () => {
   const [shouldShowMenu, setShowMenu] = useState(false)
-  const ref = useRef()
+  const divRef = useRef<HTMLDivElement>(null)
 
   const toggleMenu = (): void => {
     setShowMenu((curr) => !curr)
   }
 
-  useOutsideClick(ref, () => {
+  useOutsideClick(divRef, () => {
     setShowMenu(() => false)
   })
 
   return (
-    <nav id="header" ref={ref} className={`fixed gradient w-full z-30 top-0 text-white`}>
+    <nav id="header" ref={divRef} className={`fixed gradient w-full z-30 top-0 text-white`}>
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <a

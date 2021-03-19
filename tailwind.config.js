@@ -1,8 +1,22 @@
 const plugins = require('tailwindcss/plugin')
+const {colors: defaultColors} = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      ...defaultColors,
+      ...{
+        "custom-yellow":{
+          "400": "#CF9A12",
+          "500":  "#AD800B"
+        },
+        "custom-purple": {
+          "500": "#70008B"
+        }
+      }
+    },
     extend: {
       fontFamily: {
         italianno: ['Italianno'],

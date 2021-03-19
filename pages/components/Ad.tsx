@@ -37,7 +37,7 @@ const Footer: FunctionComponent = () => {
         <div className="container px-8">
           <div className="w-full flex flex-col md:flex-row ">
             <div className="flex-1">
-              <p className="uppercase text-indigo-800 font-bold align-middle text-center py-6">
+              <p className="uppercase text-custom-purple-500 font-bold align-middle text-center py-6">
                 ¡Aprovecha programa &quot;Abre tus alas&quot; con 20% de descuento solo hasta el 30
                 de Abril!
               </p>
