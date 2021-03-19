@@ -1,51 +1,39 @@
-import { FunctionComponent, useEffect, useState } from 'react'
+import { FunctionComponent, useRef, useEffect, useState } from 'react'
 
-interface IProps {
-  currentScrollTop: number
-}
-
-function useDocumentScroll(callback: (ar0: IProps) => void): void {
-  const [, setScrollPosition] = useState(0)
-
-  function handleDocumentScroll(): void {
-    const { scrollTop: currentScrollTop } = document.documentElement || document.body
-
-    setScrollPosition(() => currentScrollTop)
-
-    callback({ currentScrollTop })
+function useOutsideClick(ref, callback: (ar0: void) => void): void {
+  const handleClick = (e) => {
+    if (ref.current && !ref.current.contains(e.target)) {
+      callback()
+    }
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleDocumentScroll)
+    document.addEventListener('click', handleClick)
+
     return () => {
-      window.removeEventListener('scroll', handleDocumentScroll)
+      document.removeEventListener('click', handleClick)
     }
   })
 }
 
 const NavBar: FunctionComponent = () => {
-  const [shouldChangeColor, setShouldSetColor] = useState(false)
   const [shouldShowMenu, setShowMenu] = useState(false)
-  const MINIMUM_SCROLL = 10
-
-  useDocumentScroll((callbackData) => {
-    const { currentScrollTop } = callbackData
-    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
-    setShouldSetColor(isMinimumScrolled)
-  })
+  const ref = useRef()
 
   const toggleMenu = (): void => {
     setShowMenu((curr) => !curr)
   }
 
-  const textColor = shouldChangeColor ? 'text-gray-800' : 'text-white'
-  const backgroundColor = shouldChangeColor ? 'gradient' : ''
+  useOutsideClick(ref, () => {
+    setShowMenu(() => false)
+  })
+
   return (
-    <nav id="header" className={`fixed w-full z-30 top-0 text-white ${backgroundColor}`}>
+    <nav id="header" ref={ref} className={`fixed gradient w-full z-30 top-0 text-white`}>
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <a
-            className={`${textColor} no-underline hover:no-underline font-bold text-2xl lg:text-4xl`}
+            className={`text-gray-800 no-underline hover:no-underline font-bold text-2xl lg:text-4xl`}
             href="#"
           >
             <img alt="Logo" className="h-10 px-2 fill-current inline" src="/logo.svg" />
@@ -69,11 +57,9 @@ const NavBar: FunctionComponent = () => {
           </button>
         </div>
         <div
-          className={`w-full bg-custom flex-grow lg:flex lg:items-center lg:w-auto ${
+          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
             !shouldShowMenu && 'hidden'
-          }  ${
-            shouldShowMenu && 'gradient'
-          } mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
+          } mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20`}
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">

@@ -62,7 +62,7 @@ const Services: FunctionComponent = () => {
             </p>
             <a
               href="https://www.dropbox.com/s/o6cj29rzl7qhcb5/PROGRAMA%20ABRE%20TUS%20ALAS.pdf?dl=0"
-              className="inline-block mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
+              className="inline-block mx-auto lg:mx-0 hover:underline gradient text-indigo-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
             >
               Mas información
             </a>
@@ -108,7 +108,7 @@ const Services: FunctionComponent = () => {
               </p>
               <a
                 href="https://youtu.be/nXvkmEO5gRM"
-                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
+                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-indigo-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
               >
                 Mas información
               </a>
@@ -117,7 +117,7 @@ const Services: FunctionComponent = () => {
               </p>
               <a
                 href="https://www.dropbox.com/sh/s5es3babvja3kus/AAC36cCg5T0G5YT7LHQmt21La?dl=0"
-                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-indigo-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
               >
                 ¡Descárgalo ya!
               </a>
