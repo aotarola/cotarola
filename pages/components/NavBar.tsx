@@ -1,10 +1,10 @@
-import { FunctionComponent, useRef, useEffect, useState, MutableRefObject, MouseEvent } from 'react'
+import { FunctionComponent, useRef, useEffect, useState, MutableRefObject } from 'react'
 
 function useOutsideClick(
   ref: MutableRefObject<HTMLDivElement>,
   callback: (ar0: void) => void
 ): void {
-  const handleClick = (e: MouseEvent): void => {
+  const handleClick = (e): void => {
     if (ref.current && !ref.current.contains(e.target as Element)) {
       callback()
     }
