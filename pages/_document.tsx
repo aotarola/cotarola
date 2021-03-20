@@ -10,12 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link
-            rel="preload"
-            href="/fonts/Cormorant_Unicase/CormorantUnicase-Regular.ttf"
-            as="font"
-            crossOrigin=""
-          />
+          <link rel="preload" href="/fonts/Belleza/Belleza-Regular.ttf" as="font" crossOrigin="" />
           <link
             rel="preload"
             href="/fonts/Dancing_Script/static/DancingScript-Regular.ttf"

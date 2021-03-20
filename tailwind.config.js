@@ -21,9 +21,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        italianno: ['Italianno'],
-        paratype: ['ParaType'],
-        cormorantunicase: ['CormorantUnicase'],
+        belleza: ['Belleza'],
         dancingscript: ['DancingScript'],
       },
     },
