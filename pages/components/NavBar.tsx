@@ -27,9 +27,9 @@ const NavBar: FunctionComponent = () => {
     setShowMenu((curr) => !curr)
   }
 
-  useOutsideClick(divRef, () => {
-    setShowMenu(() => false)
-  })
+  const hideMenu = () => setShowMenu(() => false)
+
+  useOutsideClick(divRef, hideMenu)
 
   return (
     <nav id="header" ref={divRef} className="fixed gradient w-full z-30 top-0">
@@ -67,7 +67,11 @@ const NavBar: FunctionComponent = () => {
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
-              <a className="inline-block text-button-500 py-2 px-4 font-bold no-underline" href="#">
+              <a
+                className="inline-block text-button-500 py-2 px-4 font-bold no-underline"
+                onClick={hideMenu}
+                href="#"
+              >
                 Inicio
               </a>
             </li>
@@ -75,6 +79,7 @@ const NavBar: FunctionComponent = () => {
               <a
                 className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#aboutme"
+                onClick={hideMenu}
               >
                 Acerca de Mi
               </a>
@@ -83,6 +88,7 @@ const NavBar: FunctionComponent = () => {
               <a
                 className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#services"
+                onClick={hideMenu}
               >
                 Servicios
               </a>
@@ -91,6 +97,7 @@ const NavBar: FunctionComponent = () => {
               <a
                 className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#pricing"
+                onClick={hideMenu}
               >
                 Precios
               </a>
@@ -99,6 +106,7 @@ const NavBar: FunctionComponent = () => {
           <a
             id="navAction"
             href="https://wa.me/56932752284"
+            onClick={() => setShowMenu(() => false)}
             className="focus:outline-none focus:shadow-outline transform transition hover:scale-125 duration-300 ease-in-out"
           >
             <img alt="Whatsapp" src="/whatsapp.svg" className="h-10 px-2 fill-current inline" />

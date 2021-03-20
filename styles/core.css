@@ -7,11 +7,6 @@
   );
 }
 
-.bg-custom {
-  background-image: url('/hero-bg.jpg');
-  /* --overlay-colors: rgba(146, 220, 229, 0.7), rgba(131, 224, 250, 0.8); */
-}
-
 :target {
   scroll-margin-top: 3rem;
 }

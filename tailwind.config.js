@@ -1,4 +1,3 @@
-const plugins = require('tailwindcss/plugin')
 const {colors: defaultColors} = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -20,6 +19,9 @@ module.exports = {
       }
     },
     extend: {
+      backgroundImage: () => ({
+        'hero-image': 'url(/playa.jpg)'
+      }),
       fontFamily: {
         belleza: ['Belleza'],
         dancingscript: ['DancingScript'],
@@ -31,15 +33,5 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    plugins(function ({ addUtilities }) {
-      addUtilities({
-        '.bg-overlay': {
-          background:
-            'linear-gradient(var(--overlay-angle, 90deg), var(--overlay-colors)), var(--overlay-image)',
-          'background-position': 'center',
-          'background-size': 'cover',
-        },
-      })
-    }),
   ],
 }
