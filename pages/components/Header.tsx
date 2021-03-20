@@ -6,10 +6,10 @@ const Header: FunctionComponent = () => {
       <div className="pt-24 bg-overlay bg-custom bg-fixed py-20 text-indigo-800">
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-2/5 justify-center items-center sm:items-start text-center md:text-left">
-            <h1 className="font-paratype my-4 text-5xl font-bold leading-tight text-primary-title-500 uppercase">
+            <h1 className="font-cormoranunicase my-4 text-5xl font-bold leading-tight text-primary-title-500 uppercase">
               Claudia Otárola
             </h1>
-            <p className="font-italianno leading-normal text-6xl mb-8 text-primary-title-400">
+            <p className="font-dancingscript leading-normal text-6xl mb-8 text-primary-title-400">
               Mentora en autosanación espiritual
             </p>
           </div>

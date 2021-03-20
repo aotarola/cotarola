@@ -18,7 +18,7 @@ class MyDocument extends Document {
           />
           <link
             rel="preload"
-            href="/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf"
+            href="/fonts/Dancing_Script/static/DancingScript-Regular.ttf"
             as="font"
             crossOrigin=""
           />
