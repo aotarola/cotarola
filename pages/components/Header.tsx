@@ -4,8 +4,8 @@ const Header: FunctionComponent = () => {
   return (
     <Fragment>
       <div
-        className="pt-10 h-screen bg-local bg-cover"
-        style={{ backgroundImage: 'url(/playa.jpg)', backgroundPosition: '83% 10%' }}
+        className="pt-10 h-screen bg-local bg-cover bg-right-bottom md:pt-24"
+        style={{ backgroundImage: 'url(/playa.jpg)' }}
       >
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full justify-center items-center sm:items-start text-center md:text-left">
