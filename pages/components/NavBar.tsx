@@ -36,7 +36,7 @@ const NavBar: FunctionComponent = () => {
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <a
-            className="text-primary-paragraph no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            className="text-button-500 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
             <img alt="Logo" className="h-10 px-2 fill-current inline" src="/logo.svg" />
@@ -67,16 +67,13 @@ const NavBar: FunctionComponent = () => {
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
-              <a
-                className="inline-block text-primary-paragraph py-2 px-4 font-bold no-underline"
-                href="#"
-              >
+              <a className="inline-block text-button-500 py-2 px-4 font-bold no-underline" href="#">
                 Inicio
               </a>
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-primary-paragraph no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#aboutme"
               >
                 Acerca de Mi
@@ -84,7 +81,7 @@ const NavBar: FunctionComponent = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-primary-paragraph no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#services"
               >
                 Servicios
@@ -92,7 +89,7 @@ const NavBar: FunctionComponent = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-primary-paragraph no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#pricing"
               >
                 Precios
