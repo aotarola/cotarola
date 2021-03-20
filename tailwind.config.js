@@ -11,7 +11,7 @@ module.exports = {
         "primary":{
           "title-500":"#AD800B",
           "title-400":"#CF9A12",
-          "title": "#DDC586",
+          "title": "#373737",
           "paragraph":  "#8B8B8B"
         },
         "button": {
