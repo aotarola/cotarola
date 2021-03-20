@@ -9,6 +9,8 @@ module.exports = {
       ...defaultColors,
       ...{
         "primary":{
+          "title-500":"#AD800B",
+          "title-400":"#CF9A12",
           "title": "#DDC586",
           "paragraph":  "#8B8B8B"
         },
@@ -21,7 +23,7 @@ module.exports = {
       fontFamily: {
         italianno: ['Italianno'],
         paratype: ['ParaType'],
-        cormoranunicase: ['Cormoran'],
+        cormorantunicase: ['CormorantUnicase'],
         dancingscript: ['DancingScript'],
       },
     },
