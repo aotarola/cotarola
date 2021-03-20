@@ -48,8 +48,8 @@ const services = [
 const Pricing: FunctionComponent = () => {
   return (
     <section id="pricing" className="bg-gray-100 py-8">
-      <div className="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-        <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-custom-yellow-500">
+      <div className="container mx-auto px-2 pt-4 pb-12">
+        <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-primary-title">
           Inversión en tí
         </h1>
         <div className="w-full mb-4">
@@ -62,7 +62,7 @@ const Pricing: FunctionComponent = () => {
               key={service.id}
               className="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
             >
-              <div className="flex-1 bg-white text-custom-yellow-400 rounded-t rounded-b-none overflow-hidden shadow">
+              <div className="flex-1 bg-white text-primary-paragraph rounded-t rounded-b-none overflow-hidden shadow">
                 <div className="p-8 text-3xl font-bold text-center border-b-4">{service.name}</div>
                 <ul className="w-full text-center text-sm">
                   {service.whatsIncluded.map((includes) => (
@@ -73,13 +73,13 @@ const Pricing: FunctionComponent = () => {
                 </ul>
               </div>
               <div className="flex-none mt-auto bg-white overflow-hidden shadow p-6">
-                <div className="w-full pt-6 text-3xl text-custom-yellow-400 font-bold text-center">
+                <div className="w-full pt-6 text-3xl text-primary-paragraph font-bold text-center">
                   {service.price}
                 </div>
                 <div className="flex items-center justify-center">
                   <button
                     onClick={service.redirect}
-                    className="mx-auto lg:mx-0 hover:underline gradient text-custom-purple-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    className="mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                   >
                     {service.actionText}
                   </button>

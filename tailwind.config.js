@@ -8,11 +8,11 @@ module.exports = {
     colors: {
       ...defaultColors,
       ...{
-        "custom-yellow":{
-          "400": "#CF9A12",
-          "500":  "#AD800B"
+        "primary":{
+          "title": "#DDC586",
+          "paragraph":  "#8B8B8B"
         },
-        "custom-purple": {
+        "button": {
           "500": "#70008B"
         }
       }
@@ -21,6 +21,8 @@ module.exports = {
       fontFamily: {
         italianno: ['Italianno'],
         paratype: ['ParaType'],
+        cormoranunicase: ['Cormoran'],
+        dancingscript: ['DancingScript'],
       },
     },
   },

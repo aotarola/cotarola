@@ -32,11 +32,11 @@ const NavBar: FunctionComponent = () => {
   })
 
   return (
-    <nav id="header" ref={divRef} className={`fixed gradient w-full z-30 top-0 text-white`}>
+    <nav id="header" ref={divRef} className="fixed gradient w-full z-30 top-0">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <a
-            className={`text-gray-800 no-underline hover:no-underline font-bold text-2xl lg:text-4xl`}
+            className="text-primary-title no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
             <img alt="Logo" className="h-10 px-2 fill-current inline" src="/logo.svg" />
@@ -62,18 +62,21 @@ const NavBar: FunctionComponent = () => {
         <div
           className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
             !shouldShowMenu && 'hidden'
-          } mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20`}
+          } mt-2 lg:mt-0 p-4 lg:p-0 z-20`}
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
-              <a className="inline-block py-2 px-4 text-black font-bold no-underline" href="#">
+              <a
+                className="inline-block text-primary-title py-2 px-4 font-bold no-underline"
+                href="#"
+              >
                 Inicio
               </a>
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block text-primary-title no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#aboutme"
               >
                 Acerca de Mi
@@ -81,7 +84,7 @@ const NavBar: FunctionComponent = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block text-primary-title no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#services"
               >
                 Servicios
@@ -89,7 +92,7 @@ const NavBar: FunctionComponent = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                className="inline-block text-primary-title no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#pricing"
               >
                 Precios

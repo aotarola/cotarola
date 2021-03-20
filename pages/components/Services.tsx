@@ -4,7 +4,7 @@ const Services: FunctionComponent = () => {
   return (
     <section id="services" className="bg-white border-b py-8">
       <div className="container max-w-5xl mx-auto m-8">
-        <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-custom-yellow-500">
+        <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-primary-title">
           Servicios
         </h1>
         <div className="w-full mb-4">
@@ -12,25 +12,25 @@ const Services: FunctionComponent = () => {
         </div>
         <div className="flex flex-wrap">
           <div className="w-5/6 sm:w-1/2 p-6">
-            <h3 className="text-3xl text-custom-yellow-500 font-bold leading-none mb-3">
+            <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">
               Programa &quot;Abre tus Alas&quot;
             </h3>
-            <p className="text-custom-yellow-400 mb-8">
+            <p className="text-primary-paragraph mb-8">
               Creé este programa con una base, raíz y esencia en la mentoría y el yoga para generar
               una terapia y estudio de ti mism@ y a través del yoga armonices, integres y conectes
               con tu sabiduría.
             </p>
-            <p className="text-custom-yellow-400 mb-8">
+            <p className="text-primary-paragraph mb-8">
               Con este servicio abro un espacio sagrado para acompañarte y guiarte en tu proceso de
               autoconocimiento y transformación para que tú vayas reconociendo tus propias
               herramientas desde tu sabiduría interior y así evolucionar desde tu expansión de
               consciencia encaminándote hacia donde te lleva tu alma.
             </p>
-            <p className="text-custom-yellow-400 mb-8">
+            <p className="text-primary-paragraph mb-8">
               Este programa está principalmente enfocado en personas que se sienten inseguras y
               desvalorizadas.
             </p>
-            <ul className="text-custom-yellow-400 ml-4 mb-8 list-disc">
+            <ul className="text-primary-paragraph ml-4 mb-8 list-disc">
               <li>Vas a conectar con tu poder autosanador.</li>
               <li>Vas a conectar con tu seguridad, confianza y plenitud.</li>
               <li>Vas a comprender tu mente y cómo enfocarla.</li>
@@ -57,7 +57,7 @@ const Services: FunctionComponent = () => {
               <li>No esperes más por tu cambio, estás a un paso de darle el giro a tu vida. </li>
               <li>Ámate tanto y haz la inversión más importante de tu vida.</li>
             </ul>
-            <p className="text-custom-yellow-400">
+            <p className="text-primary-paragraph">
               Mi misión es acompañarte y ayudarte a cumplir la tuya que es ABRIR TUS ALAS.
             </p>
             <a
@@ -85,24 +85,24 @@ const Services: FunctionComponent = () => {
           </div>
           <div className="w-full sm:w-1/2 p-6 mt-6">
             <div className="align-middle">
-              <h3 className="text-3xl text-custom-yellow-500 font-bold leading-none mb-3">
+              <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">
                 Masterclass mensuales
               </h3>
-              <p className="text-custom-yellow-400 mb-8">
+              <p className="text-primary-paragraph mb-8">
                 Cada mes estaré dictando una exclusiva Masterclass en vivo vía Zoom con un tema a
                 desarrollar compuesto de material previo de trabajo y herramientas para que hagas tu
                 trabajo personal. Siempre estaré entregándoles información y contenido exclusivo y
                 de calidad.
               </p>
-              <p className="text-custom-yellow-400 mb-8">
+              <p className="text-primary-paragraph mb-8">
                 No te puedes perder esta oportunidad de crecimiento en conjunto. Nunca olvides que
                 tus preguntas nutren las clase.
               </p>
-              <p className="text-custom-yellow-400 mb-8">
+              <p className="text-primary-paragraph mb-8">
                 Solo para las personas que estén activas en el programa “Abre tus Alas” tendrán
                 acceso gratuito.
               </p>
-              <p className="text-custom-yellow-400">
+              <p className="text-primary-paragraph">
                 Puedes revisar mi Masterclass Gratuita de Febrero 2021, ¡no dejes de hacer el
                 poderoso ejercicio de esta clase!.
               </p>
@@ -112,7 +112,7 @@ const Services: FunctionComponent = () => {
               >
                 Mas información
               </a>
-              <p className="text-custom-yellow-400">
+              <p className="text-primary-paragraph">
                 Y el material de apoyo para tu estudio en el siguiente enlace
               </p>
               <a
@@ -127,27 +127,27 @@ const Services: FunctionComponent = () => {
 
         <div className="flex flex-wrap">
           <div className="w-5/6 sm:w-1/2 p-6">
-            <h3 className="text-3xl text-custom-yellow-500 font-bold leading-none mb-3">
+            <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">
               Clases de Yoga
             </h3>
-            <p className="text-custom-yellow-400 mb-8">
+            <p className="text-primary-paragraph mb-8">
               De lo que he estudiado sobre esta forma de vida es que el yoga va más allá que un
               simple ejercicio físico, yoga es conexión y unión con el
               dios/divinidad/universo/consciencia infinita (o como prefieras llamarle) que habita en
               nosotros.
             </p>
 
-            <p className="text-custom-yellow-400 mb-8">
+            <p className="text-primary-paragraph mb-8">
               Yoga es la ciencia de la consciencia individual que alcanza la comunión con la
               consciencia última.
             </p>
 
-            <p className="text-custom-yellow-400 mb-8">
+            <p className="text-primary-paragraph mb-8">
               Yoga es sentirte parte del todo, es hacer la práctica con conciencia y nos lleva a
               vivir nuestra vida así.
             </p>
 
-            <p className="text-custom-yellow-400 mb-8">
+            <p className="text-primary-paragraph mb-8">
               Algunos de sus tantos beneficios es que nos ayuda a conectar con algunas emociones
               bloqueadas a través de la estimulación de nuestros puntos energéticos o chakras como
               también a mejorar la comunicación con nuestro cuerpo y purificar y clarificar nuestra
@@ -155,12 +155,12 @@ const Services: FunctionComponent = () => {
               tensiones, tránsito grastrointestinal entre otros.
             </p>
 
-            <p className="text-custom-yellow-400 mb-8">
+            <p className="text-primary-paragraph mb-8">
               Antes de iniciar tu práctica siempre recuerda que toda asana (postura) está perfecta
               cuando la disfrutas.
             </p>
 
-            <p className="text-custom-yellow-400">
+            <p className="text-primary-paragraph">
               Te invito a tomar una clase de regalo para que sientas si conectas con mi forma de
               entregar el yoga.
             </p>
