@@ -1,4 +1,3 @@
-import { FunctionComponent } from 'react'
 const toCalendly = (): void => {
   window.location.href = 'https://calendly.com/claudiaotarola'
 }
@@ -16,7 +15,8 @@ const services = [
       'Incluye sesión "Resurgimiento de tu vuelo" gratis',
     ],
     redirect: toCalendly,
-    price: '$650.000 CLP / $970 USD',
+    price: '$520.000 CLP / $776 USD',
+    priceBefore: '$650.000 CLP / $970 USD',
     actionText: 'Inscribir',
   },
   {
@@ -73,6 +73,11 @@ const Pricing: FunctionComponent = () => {
                 </ul>
               </div>
               <div className="flex-none mt-auto bg-white overflow-hidden shadow p-6">
+                {service.priceBefore && (
+                  <div className="w-full line-through pt-6 text-3xl text-primary-paragraph font-bold text-center">
+                    {service.priceBefore}
+                  </div>
+                )}
                 <div className="w-full pt-6 text-3xl text-primary-paragraph font-bold text-center">
                   {service.price}
                 </div>
