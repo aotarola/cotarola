@@ -19,6 +19,7 @@ const services = [
     price: '$520.000 CLP / $776 USD',
     priceBefore: '$650.000 CLP / $970 USD',
     actionText: 'Inscribir',
+    discountOff: '*Precio valido solo hasta el 30 de Abril',
   },
   {
     id: 'masterclass-vivo',
@@ -81,6 +82,10 @@ const Pricing: FunctionComponent = () => {
                 )}
                 <div className="w-full pt-6 text-3xl text-primary-paragraph font-bold text-center">
                   {service.price}
+                </div>
+
+                <div className="w-full pt-6 text-primary-paragraph text-sm text-center">
+                  {service.discountOff}
                 </div>
                 <div className="flex items-center justify-center">
                   <button
