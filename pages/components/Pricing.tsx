@@ -80,7 +80,7 @@ const Pricing: FunctionComponent = () => {
                     {service.priceBefore}
                   </div>
                 )}
-                <div className="w-full pt-6 text-3xl text-primary-paragraph font-bold text-center">
+                <div className="w-full pt-6 text-3xl font-bold text-black text-center">
                   {service.price}
                 </div>
 
