@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react'
 const toCalendly = (): void => {
   window.location.href = 'https://calendly.com/claudiaotarola'
 }
