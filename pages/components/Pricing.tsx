@@ -16,8 +16,8 @@ const services = [
       'Incluye sesión "Resurgimiento de tu vuelo" gratis',
     ],
     redirect: toCalendly,
-    price: '$520.000 CLP / $776 USD',
-    priceBefore: '$650.000 CLP / $970 USD',
+    priceBefore: null,
+    price: '$650.000 CLP / $970 USD',
     actionText: 'Inscribir',
     discountOff: '*Precio valido solo hasta el 30 de Abril',
   },
@@ -26,6 +26,7 @@ const services = [
     name: 'Masterclass en Vivo',
     whatsIncluded: ['Clase presencial*', 'Puedes conectar de manera remota via zoom'],
     redirect: toCalendly,
+    priceBefore: null,
     price: '$30.000 CLP / $44 USD',
     actionText: 'Inscribir',
   },
@@ -34,6 +35,7 @@ const services = [
     name: 'Masterclass Grabada',
     whatsIncluded: ['Acceso exclusivo a mis clases anteriores', 'Sigue el curso a tu tiempo'],
     redirect: toCalendly,
+    priceBefore: null,
     price: '$35.000 CLP / $50 USD',
     actionText: 'Inscribir',
   },
@@ -42,6 +44,7 @@ const services = [
     name: 'Clases de Yoga (Múltiple)',
     whatsIncluded: ['4 clases mensuales', '8 clases mensuales', '12 clases mensuales'],
     redirect: toForm,
+    priceBefore: null,
     price: 'Desde $12.000 CLP / $22 USD',
     actionText: 'Contáctame',
   },
@@ -85,7 +88,7 @@ const Pricing: FunctionComponent = () => {
                 </div>
 
                 <div className="w-full pt-6 text-primary-paragraph text-sm text-center">
-                  {service.discountOff}
+                  {service.priceBefore && service.discountOff}
                 </div>
                 <div className="flex items-center justify-center">
                   <button

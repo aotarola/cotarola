@@ -5,7 +5,6 @@ import AboutMe from './components/AboutMe'
 import Services from './components/Services'
 import Pricing from './components/Pricing'
 import ContactMe from './components/ContactMe'
-import Ad from './components/Ad'
 import Footer from './components/Footer'
 
 const Home: FunctionComponent = () => {
@@ -22,7 +21,6 @@ const Home: FunctionComponent = () => {
       <img alt="bottom gradient" src="/grad.svg" />
       <ContactMe />
       <Footer />
-      <Ad />
     </div>
   )
 }
