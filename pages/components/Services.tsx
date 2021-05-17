@@ -66,6 +66,22 @@ const Services: FunctionComponent = () => {
             >
               Mas información
             </a>
+            <br />
+              <a
+                href="https://youtu.be/nXvkmEO5gRM"
+                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
+              >
+              Ver Masterclass
+              </a>
+              <p className="text-primary-paragraph">
+                Y el material de apoyo para tu estudio en el siguiente enlace
+              </p>
+              <a
+                href="https://www.dropbox.com/sh/s5es3babvja3kus/AAC36cCg5T0G5YT7LHQmt21La?dl=0"
+                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              >
+                ¡Descárgalo ya!
+              </a>
           </div>
           <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
             <img
