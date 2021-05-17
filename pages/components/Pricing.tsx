@@ -1,9 +1,14 @@
 import { FunctionComponent } from 'react'
-const toCalendly = (): void => {
-  window.location.href = 'https://calendly.com/claudiaotarola'
+
+const toCalendly = (id): void => {
+  let base ='https://calendly.com/claudiaotarola/' 
+  if(id === 'regresion'){
+    base = `${base}regresion-a-vidas-pasadas-rvp` 
+  }
+  window.location.href = base
 }
 
-const toForm = (): void => {
+const toForm = (event): void => {
   window.location.href = '#contactme'
 }
 const services = [
@@ -16,28 +21,20 @@ const services = [
       'Incluye sesión "Resurgimiento de tu vuelo" gratis',
     ],
     redirect: toCalendly,
-    priceBefore: null,
-    price: '$650.000 CLP / $970 USD',
+    priceBefore: '$650.000 CLP / $970 USD',
+    price: '$520.000 CLP / $776 USD',
     actionText: 'Inscribir',
-    discountOff: '*Precio valido solo hasta el 30 de Abril',
+    discountOff: '*Precio válido solo hasta el 30 de Septiembre',
   },
   {
-    id: 'masterclass-vivo',
-    name: 'Masterclass en Vivo',
-    whatsIncluded: ['Clase presencial*', 'Puedes conectar de manera remota via zoom'],
+    id: 'regresion',
+    name: 'Regresión a Vidas Pasadas',
+    whatsIncluded: ['Sesiones de 2 horas aprox.'],
     redirect: toCalendly,
-    priceBefore: null,
-    price: '$30.000 CLP / $44 USD',
+    priceBefore: '$60.000 CLP / $90 USD',
+    price: '$36.000 CLP / $54 USD',
     actionText: 'Inscribir',
-  },
-  {
-    id: 'masterclass-grabada',
-    name: 'Masterclass Grabada',
-    whatsIncluded: ['Acceso exclusivo a mis clases anteriores', 'Sigue el curso a tu tiempo'],
-    redirect: toCalendly,
-    priceBefore: null,
-    price: '$35.000 CLP / $50 USD',
-    actionText: 'Inscribir',
+    discountOff: '*Precio válido solo hasta el 30 de Septiembre',
   },
   {
     id: 'yoga',
@@ -92,7 +89,7 @@ const Pricing: FunctionComponent = () => {
                 </div>
                 <div className="flex items-center justify-center">
                   <button
-                    onClick={service.redirect}
+                    onClick={() => service.redirect(service.id)}
                     className="mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                   >
                     {service.actionText}

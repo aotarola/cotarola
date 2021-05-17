@@ -79,48 +79,74 @@ const Services: FunctionComponent = () => {
           <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
             <img
               className="sm:h-96 mx-auto rounded-full"
-              alt="Masterclass mensuales"
+              alt="Regresión a Vidas Pasadas"
               src="/mentoria.jpg"
             />
           </div>
           <div className="w-full sm:w-1/2 p-6 mt-6">
             <div className="align-middle">
               <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">
-                Masterclass mensuales
+                Regresión a Vidas Pasadas
               </h3>
               <p className="text-primary-paragraph mb-8">
-                Cada mes estaré dictando una exclusiva Masterclass en vivo vía Zoom con un tema a
-                desarrollar compuesto de material previo de trabajo y herramientas para que hagas tu
-                trabajo personal. Siempre estaré entregándoles información y contenido exclusivo y
-                de calidad.
+                ¿Qué es y para qué sirve una Regresión a vidas pasadas?
               </p>
               <p className="text-primary-paragraph mb-8">
-                No te puedes perder esta oportunidad de crecimiento en conjunto. Nunca olvides que
-                tus preguntas nutren las clase.
+                Básicamente para resignificar y encuadrar nuestro mundo interno y así vivir nuestro presente con libertad. Por ejemplo tratar conflictos emocionales en cualquier tipo de vínculos (pareja, familiares, amigos, trabajo, etc), fobias, bloqueos afectivos e intelectuales, sentimientos de culpas, trastornos mentales como la depresión, miedos asociados a conectar con nuestro poder y éxito personal, etc
               </p>
               <p className="text-primary-paragraph mb-8">
-                Solo para las personas que estén activas en el programa “Abre tus Alas” tendrán
-                acceso gratuito.
+                Es importante saber que es la propia alma la que trabaja con sus experiencias vividas hasta soltar las energías emocionales que la inquietan. 
               </p>
-              <p className="text-primary-paragraph">
-                Puedes revisar mi Masterclass Gratuita de Febrero 2021, ¡no dejes de hacer el
-                poderoso ejercicio de esta clase!.
+              <p className="text-primary-paragraph mb-8">
+                Para transmutar emociones y sensaciones dolorosas y traumáticas el alma necesita de un cuerpo, esta es una de las razones por la cual estamos aquí en esta vida. Se dice que  el cuerpo se enferma para que el alma sane y esta terapia le da al alma esa posibilidad  de sanar sin dañar el cuerpo.
               </p>
-              <a
-                href="https://youtu.be/nXvkmEO5gRM"
-                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
-              >
-                Mas información
-              </a>
-              <p className="text-primary-paragraph">
-                Y el material de apoyo para tu estudio en el siguiente enlace
+              <p className="text-primary-paragraph mb-8">
+                Solo el hecho de revivir una experiencia pasada con toda la energía de las emociones y sensaciones, se purifica el alma y ocurre la sanación.
               </p>
-              <a
-                href="https://www.dropbox.com/sh/s5es3babvja3kus/AAC36cCg5T0G5YT7LHQmt21La?dl=0"
-                className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-              >
-                ¡Descárgalo ya!
-              </a>
+              <p className="text-primary-paragraph mb-8">
+                ¿Cómo se hace?
+              </p>
+              <p className="text-primary-paragraph mb-8">
+                Se revive la experiencia original (un hecho no resuelto donde quedó parte de nuestra energía atrapada o fragmento de nuestra alma) haciendo  consciente lo inconsciente según la técnica que más se adapte a ti. 
+              </p>
+              <p className="text-primary-paragraph mb-8">
+                En todo momento estás consciente para que puedas ver con claridad la relación  de las experiencias del pasado con tu vida actual.
+              </p>
+              <p className="text-primary-paragraph mb-8">
+                Con mi guía tu mism@ liberas y recuperas la energía o fragmentación de tu alma que quedó atascada en esa experiencia descargando pensamientos, sensaciones o emociones asociados a ella recuperando tu libertad de ser. 
+              </p>
+              <p className="text-primary-paragraph mb-8">
+                Se puede llegar a vivir experiencias de esta vida o vidas pasadas (según tus creencias) comprendiendo la atemporalidad del alma, las experiencias están sucediendo en este momento de forma simultánea.
+              </p>
+              <p className="text-primary-paragraph mb-8">
+                No es un viaje en el tiempo, es una sanación y liberación de tu ser saliendo de tus estructuras mentales y dándole a tu alma el espacio para  su expansión infinita
+              </p>
+              <p className="text-primary-paragraph mb-8">
+                ¿Qué otros temas se pueden revisar con las regresiones?
+              </p>
+              <ul className="text-primary-paragraph ml-4 mb-8 list-disc">
+                <li>Plan de vida</li>
+                <li>Vida intrauterina</li>
+                <li>Nacimiento</li>
+                <li>Mandatos</li>
+                <li>Promesas</li>
+                <li>Juramentos</li>
+                <li>Maldiciones</li>
+                <li>Pactos</li>
+                <li>Votos</li>
+                <li>Acuerdos</li>
+                <li>Corte de cordones energéticos</li>
+                <li>Almas perdidas</li>
+              </ul>
+              <p className="text-primary-paragraph mb-8">
+                  Inversion en tu sanación
+              </p>
+              <p className="text-primary-paragraph mb-8">
+                  La mayoría aprendimos a reprimir y no sentir nuestras emociones buscando formas de callar el dolor cuando el camino muchas veces es darle permiso a ese dolor que grite y liberemos toda esa energía recuperando el descanso en nuestro corazón y alma viendo reflejado todo esto en nuestra vida.
+              </p>
+              <p className="text-primary-paragraph mb-8">
+                  El secreto de la sanación es entregarte a vivir la experiencia, entregarte a sentir.
+              </p>
             </div>
           </div>
         </div>
