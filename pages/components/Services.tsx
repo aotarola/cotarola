@@ -57,7 +57,7 @@ const Services: FunctionComponent = () => {
               <li>No esperes más por tu cambio, estás a un paso de darle el giro a tu vida. </li>
               <li>Ámate tanto y haz la inversión más importante de tu vida.</li>
             </ul>
-            <p className="text-primary-paragraph">
+            <p className="text-primary-paragraph mb-8">
               Mi misión es acompañarte y ayudarte a cumplir la tuya que es ABRIR TUS ALAS.
             </p>
             <a
@@ -66,7 +66,10 @@ const Services: FunctionComponent = () => {
             >
               Mas información
             </a>
-            <br />
+            <p className="text-primary-paragraph">
+                Puedes revisar mi Masterclass Gratuita de Febrero 2021, ¡no dejes de hacer el poderoso ejercicio de esta clase!.
+            </p>
+
               <a
                 href="https://youtu.be/nXvkmEO5gRM"
                 className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
