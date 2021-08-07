@@ -12,7 +12,7 @@ const Header: FunctionComponent = () => {
             <h1 className="font-belleza my-4 text-6xl font-bold leading-tight text-primary-title uppercase">
               Claudia Otárola
             </h1>
-            <p className="font-dancingscript text-5xl text-primary-title-400">
+            <p className="font-dancingscript text-5xl text-primary-title">
               Mentora en autosanación espiritual
             </p>
           </div>
