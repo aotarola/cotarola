@@ -1,14 +1,14 @@
 import { FunctionComponent } from 'react'
 
 const toCalendly = (id): void => {
-  let base ='https://calendly.com/claudiaotarola/' 
-  if(id === 'regresion'){
-    base = `${base}regresion-a-vidas-pasadas-rvp` 
+  let base = 'https://calendly.com/claudiaotarola/'
+  if (id === 'regresion') {
+    base = `${base}regresion-a-vidas-pasadas-rvp`
   }
   window.location.href = base
 }
 
-const toForm = (event): void => {
+const toForm = (): void => {
   window.location.href = '#contactme'
 }
 const services = [
@@ -39,7 +39,7 @@ const services = [
   {
     id: 'yoga',
     name: 'Clases de Yoga (Múltiple)',
-    whatsIncluded: ['4 clases mensuales', '8 clases mensuales', '12 clases mensuales'],
+    whatsIncluded: ['4 clases mensuales', '8 clases mensuales'],
     redirect: toForm,
     priceBefore: null,
     price: 'Desde $12.000 CLP / $22 USD',

@@ -96,6 +96,15 @@ const NavBar: FunctionComponent = () => {
             <li className="mr-3">
               <a
                 className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="#cronyoser"
+                onClick={hideMenu}
+              >
+                Cronyoser
+              </a>
+            </li>
+            <li className="mr-3">
+              <a
+                className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#pricing"
                 onClick={hideMenu}
               >

@@ -9,11 +9,11 @@ module.exports = {
       ...{
         "primary":{
           "title-400":"#CF9A12",
-          "title": "#AD800B",
+          "title": "#994A4A",
           "paragraph":  "#8B8B8B"
         },
         "button": {
-          "500": "#70008B"
+          "500": "#551A25"
         }
       }
     },

@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe'
 import Services from './components/Services'
 import Pricing from './components/Pricing'
 import ContactMe from './components/ContactMe'
+import Cronyoser from './components/Cronyoser'
 import Footer from './components/Footer'
 
 const Home: FunctionComponent = () => {
@@ -18,6 +19,7 @@ const Home: FunctionComponent = () => {
       <AboutMe />
       <Services />
       <Pricing />
+      <Cronyoser />
       <img alt="bottom gradient" src="/grad.svg" />
       <ContactMe />
       <Footer />
