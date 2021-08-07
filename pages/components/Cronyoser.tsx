@@ -5,7 +5,7 @@ const Services: FunctionComponent = () => {
     <section id="cronyoser" className="bg-white border-b py-8">
       <div className="container max-w-5xl mx-auto m-8">
         <div className="w-5/6 mx-auto">
-          <img className="sm:h-96 mx-auto rounded-full" alt="Abre tus Alas" src="/cronyoser.png" />
+          <img className="sm:h-96 mx-auto rounded-full" alt="Cronyoser" src="/cronyoser.png" />
         </div>
         <div className="w-full mb-4">
           <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -25,11 +25,7 @@ const Services: FunctionComponent = () => {
               CRONYOSER te recuerda que “al expresarte te transformas y transformas.”
             </p>
             <div className="w-5/6 mx-auto sm:pt-10 ">
-              <img
-                className="sm:h-96 mx-auto rounded-full"
-                alt="Abre tus Alas"
-                src="/evolucion33.png"
-              />
+              <img className="sm:h-96 mx-auto " alt="Evolucion 33" src="/evolucion33.png" />
             </div>
             <h2 className="w-full my-8  font-bold leading-tight text-left text-primary-title">
               Evolución 33 viene a romper todos los esquemas y creencias colectivas sobre amor
