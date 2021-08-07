@@ -4,9 +4,9 @@ const Services: FunctionComponent = () => {
   return (
     <section id="cronyoser" className="bg-white border-b py-8">
       <div className="container max-w-5xl mx-auto m-8">
-        <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-primary-title">
-          Cronyoser
-        </h1>
+        <div className="w-5/6 mx-auto">
+          <img className="sm:h-96 mx-auto rounded-full" alt="Abre tus Alas" src="/cronyoser.png" />
+        </div>
         <div className="w-full mb-4">
           <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
@@ -24,6 +24,13 @@ const Services: FunctionComponent = () => {
               liberación y limpieza energética y emocional para recordarte que eres canal y portal.
               CRONYOSER te recuerda que “al expresarte te transformas y transformas.”
             </p>
+            <div className="w-5/6 mx-auto sm:pt-10 ">
+              <img
+                className="sm:h-96 mx-auto rounded-full"
+                alt="Abre tus Alas"
+                src="/evolucion33.png"
+              />
+            </div>
             <h2 className="w-full my-8  font-bold leading-tight text-left text-primary-title">
               Evolución 33 viene a romper todos los esquemas y creencias colectivas sobre amor
               propio Y valor personal para darle espacio a tu real SER.
