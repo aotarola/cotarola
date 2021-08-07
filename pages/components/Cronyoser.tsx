@@ -24,7 +24,7 @@ const Services: FunctionComponent = () => {
               liberación y limpieza energética y emocional para recordarte que eres canal y portal.
               CRONYOSER te recuerda que “al expresarte te transformas y transformas.”
             </p>
-            <div className="w-5/6 mx-auto sm:pt-10 ">
+            <div className="w-5/6 mx-auto">
               <img className="sm:h-96 mx-auto " alt="Evolucion 33" src="/evolucion33.png" />
             </div>
             <h2 className="w-full my-8  font-bold leading-tight text-left text-primary-title">
