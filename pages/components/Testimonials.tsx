@@ -18,17 +18,17 @@ const Testimonials: FunctionComponent = () => {
             <p className="text-primary-paragraph mb-8">
               <em>Cuando comencé a aceptarme las cadenas que impedían mi vuelo se transformaron en alas y comencé a volar</em>
             </p>
-            <a href="https://www.instagram.com/andrea.flores.holistica/?hl=es" class="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8" target="_blank">
+            <a href="https://www.instagram.com/andrea.flores.holistica/?hl=es" className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8" target="_blank">
               IG: @andrea.flores.holistica
             </a>
           </div>
           <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
-            <iframe width="450" height="315" src="https://www.youtube.com/embed/dFZJkB1Bvdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/dFZJkB1Bvdw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
         <div className="flex flex-wrap flex-col-reverse sm:flex-row">
           <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
-            <iframe width="450" height="315" src="https://www.youtube.com/embed/pqQAL2G-p9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/pqQAL2G-p9A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <div className="w-full sm:w-1/2 p-6 mt-6">
             <div className="align-middle">
@@ -57,18 +57,18 @@ const Testimonials: FunctionComponent = () => {
                 IG: @pesticidasoficial
               </em>
             </p>
-            <a href="https://www.instagram.com/pesticidasoficial/?hl=es" class="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8" target="_blank">
+            <a href="https://www.instagram.com/pesticidasoficial/?hl=es" className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8" target="_blank">
               IG: @pesticidasoficial
             </a>
           </div>
           <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
-            <iframe width="450" height="315" src="https://www.youtube.com/embed/CsG64_MVG4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/CsG64_MVG4A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
 
         <div className="flex flex-wrap flex-col-reverse sm:flex-row">
           <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
-            <iframe width="450" height="315" src="https://www.youtube.com/embed/KFZh8ONtpSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/KFZh8ONtpSA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <div className="w-full sm:w-1/2 p-6 mt-6">
             <div className="align-middle">
@@ -78,7 +78,7 @@ const Testimonials: FunctionComponent = () => {
               <p className="text-primary-paragraph mb-8">
                 Productor, Artista e Ingeniero
               </p>
-              <a href="https://www.instagram.com/doctor.ritmo/?hl=es" class="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8" target="_blank">
+              <a href="https://www.instagram.com/doctor.ritmo/?hl=es" className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8" target="_blank">
                 IG: @doctor.ritmo
               </a>
             </div>
