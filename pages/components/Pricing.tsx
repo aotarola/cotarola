@@ -22,7 +22,9 @@ const services = [
     ],
     redirect: toCalendly,
     price: '$650.000 CLP / $970 USD',
+    priceBefore: null,
     actionText: 'Inscribir',
+    discountOff: null,
   },
   {
     id: 'regresion',
@@ -30,7 +32,9 @@ const services = [
     whatsIncluded: ['Sesiones de 2 horas aprox.'],
     redirect: toCalendly,
     price: '$60.000 CLP / $90 USD',
+    priceBefore: null,
     actionText: 'Inscribir',
+    discountOff: null,
   },
   {
     id: 'yoga',
