@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import Header from './components/Header'
 import AboutMe from './components/AboutMe'
 import Services from './components/Services'
+import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import ContactMe from './components/ContactMe'
 import Cronyoser from './components/Cronyoser'
@@ -18,6 +19,7 @@ const Home: FunctionComponent = () => {
       <Header />
       <AboutMe />
       <Services />
+      <Testimonials />
       <Pricing />
       <Cronyoser />
       <img alt="bottom gradient" src="/grad.svg" />

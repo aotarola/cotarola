@@ -60,9 +60,8 @@ const NavBar: FunctionComponent = () => {
           </button>
         </div>
         <div
-          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
-            !shouldShowMenu && 'hidden'
-          } mt-2 lg:mt-0 p-4 lg:p-0 z-20`}
+          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${!shouldShowMenu && 'hidden'
+            } mt-2 lg:mt-0 p-4 lg:p-0 z-20`}
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
@@ -91,6 +90,15 @@ const NavBar: FunctionComponent = () => {
                 onClick={hideMenu}
               >
                 Servicios
+              </a>
+            </li>
+            <li className="mr-3">
+              <a
+                className="inline-block text-button-500 no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="#testimonials"
+                onClick={hideMenu}
+              >
+                Testimonios
               </a>
             </li>
             <li className="mr-3">
