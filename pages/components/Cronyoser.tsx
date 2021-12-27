@@ -40,10 +40,7 @@ const Services: FunctionComponent = () => {
               pareja, de amigos, familiares o laborales sólo desarrollando una buena comunicación
               interna? Lee más información.
             </p>
-            <p className="text-primary-paragraph mb-8">
-              Inicio: INSCRÍBETE HOY GRATIS Y TEN ACCESO HASTA EL 20 DE AGOSTO. ¡50% DE DESCUENTO!
-              Oferta lanzamiento $53.33 USD desde el 21 de Agosto 2021.
-            </p>
+            <p className="text-primary-paragraph mb-8">Tienes acceso gratis a los 3 primeros audios</p>
             <a
               href="https://cronyoser.thinkific.com/"
               className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
