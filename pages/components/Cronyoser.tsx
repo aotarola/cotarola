@@ -45,7 +45,14 @@ const Services: FunctionComponent = () => {
               href="https://cronyoser.thinkific.com/"
               className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
             >
-              ¡Inscríbete!
+              Mas información del curso aquí (medio de pago Paypal)
+            </a>
+            <br />
+            <a
+              href="https://www.flow.cl/app/web/pagarBtnPago.php?token=qfpz434"
+              className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
+            >
+              Medios de pago débito/crédito (Chile)
             </a>
           </div>
         </div>

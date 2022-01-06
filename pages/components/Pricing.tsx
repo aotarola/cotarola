@@ -8,6 +8,36 @@ const toCalendly = (id): void => {
   window.location.href = base
 }
 
+const toGeneric = (service) =>
+
+  <div className="flex items-center justify-center">
+    <button
+      onClick={() => service.redirect(service.id)}
+      className="mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+    >
+      {service.actionText}
+
+    </button></div>
+
+const toEvolucion33 = () => {
+  return (
+
+    <div className="flex flex-col text-center">
+      <a
+        href="https://cronyoser.thinkific.com/"
+        className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
+      >
+        Medio de pago Paypal
+            </a>
+      <a
+        href="https://www.flow.cl/app/web/pagarBtnPago.php?token=qfpz434"
+        className="inline-block mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out mb-8"
+      >
+        Medios de pago débito/crédito (Chile)
+            </a>
+    </div>)
+}
+
 const toForm = (): void => {
   window.location.href = '#contactme'
 }
@@ -21,7 +51,7 @@ const services = [
       'Incluye sesión "Resurgimiento de tu vuelo" gratis',
     ],
     redirect: toCalendly,
-    price: '$650.000 CLP / $970 USD',
+    price: '$650.000 CLP / $797 USD',
     priceBefore: null,
     actionText: 'Inscribir',
     discountOff: null,
@@ -37,6 +67,16 @@ const services = [
     discountOff: null,
   },
   {
+    id: 'evolucion33',
+    name: 'Evolucion 33',
+    whatsIncluded: ['Curso de profunda transformación personal.'],
+    redirect: toEvolucion33,
+    price: '$108.000 CLP / $133.33 USD',
+    priceBefore: '$216.000 CLP / $266.66 USD',
+    actionText: 'Inscribir',
+    discountOff: '50% de descuento hasta el 31/3/22',
+  },
+  {
     id: 'yoga',
     name: 'Clases de Yoga (Múltiple)',
     whatsIncluded: ['4 clases mensuales', '8 clases mensuales'],
@@ -46,6 +86,7 @@ const services = [
     actionText: 'Contáctame',
   },
 ]
+
 
 const Pricing: FunctionComponent = () => {
   return (
@@ -87,14 +128,8 @@ const Pricing: FunctionComponent = () => {
                 <div className="w-full pt-6 text-primary-paragraph text-sm text-center">
                   {service.priceBefore && service.discountOff}
                 </div>
-                <div className="flex items-center justify-center">
-                  <button
-                    onClick={() => service.redirect(service.id)}
-                    className="mx-auto lg:mx-0 hover:underline gradient text-button-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                  >
-                    {service.actionText}
-                  </button>
-                </div>
+                {service.id === 'evolucion33' && toEvolucion33()}
+                {service.id !== 'evolucion33' && toGeneric(service)}
               </div>
             </div>
           ))}
