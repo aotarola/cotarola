@@ -1,12 +1,17 @@
 module Page.Index exposing (Data, Model, Msg, page)
 
+import Css
 import DataSource exposing (DataSource)
 import Head
 import Head.Seo as Seo
+import Html.Styled exposing (..)
+import Html.Styled.Attributes as Attr exposing (css)
 import Page exposing (Page, StaticPayload)
 import Pages.PageUrl exposing (PageUrl)
 import Pages.Url
 import Shared
+import Tailwind.Breakpoints as Bp
+import Tailwind.Utilities as Tw
 import View exposing (View)
 
 
@@ -66,4 +71,6 @@ view :
     -> StaticPayload Data RouteParams
     -> View Msg
 view maybeUrl sharedModel static =
-    View.placeholder "Index"
+    { title = "Claudia Otarola"
+    , body = [ text "dood" ]
+    }
