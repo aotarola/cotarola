@@ -1,4 +1,4 @@
-const {colors: defaultColors} = require('tailwindcss/defaultTheme')
+const { colors: defaultColors } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -7,10 +7,10 @@ module.exports = {
     colors: {
       ...defaultColors,
       ...{
-        "primary":{
-          "title-400":"#CF9A12",
+        "primary": {
+          "title-400": "#CF9A12",
           "title": "#994A4A",
-          "paragraph":  "#8B8B8B"
+          "paragraph": "#8B8B8B"
         },
         "button": {
           "500": "#551A25"
@@ -18,9 +18,6 @@ module.exports = {
       }
     },
     extend: {
-      backgroundImage: () => ({
-        'hero-image': 'url(/playa.jpg)'
-      }),
       fontFamily: {
         belleza: ['Belleza'],
         dancingscript: ['DancingScript'],
