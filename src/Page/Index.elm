@@ -1,6 +1,7 @@
 module Page.Index exposing (Data, Model, Msg, page)
 
 import Css
+import Css.Global
 import DataSource exposing (DataSource)
 import Head
 import Head.Seo as Seo
@@ -72,5 +73,8 @@ view :
     -> View Msg
 view maybeUrl sharedModel static =
     { title = "Claudia Otarola"
-    , body = [ text "dood" ]
+    , body =
+        [ div []
+            [ text "Pagina de inicio" ]
+        ]
     }

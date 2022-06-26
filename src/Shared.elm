@@ -1,6 +1,7 @@
 module Shared exposing (Data, Model, Msg(..), SharedMsg(..), template)
 
 import Browser.Navigation
+import Css.Global
 import DataSource
 import Html exposing (Html)
 import Html.Styled
@@ -9,7 +10,9 @@ import Pages.PageUrl exposing (PageUrl)
 import Path exposing (Path)
 import Route exposing (Route)
 import SharedTemplate exposing (SharedTemplate)
+import Tailwind.Utilities as Tw
 import View exposing (View)
+import View.Header as Header
 
 
 template : SharedTemplate Msg Model Data msg
@@ -29,6 +32,7 @@ type Msg
         , query : Maybe String
         , fragment : Maybe String
         }
+    | ToggleMobileMenu
     | SharedMsg SharedMsg
 
 
@@ -71,6 +75,9 @@ update msg model =
         OnPageChange _ ->
             ( { model | showMobileMenu = False }, Cmd.none )
 
+        ToggleMobileMenu ->
+            ( { model | showMobileMenu = not model.showMobileMenu }, Cmd.none )
+
         SharedMsg globalMsg ->
             ( model, Cmd.none )
 
@@ -85,6 +92,11 @@ data =
     DataSource.succeed ()
 
 
+resetStyles : Html.Styled.Html msg
+resetStyles =
+    Css.Global.global Tw.globalStyles
+
+
 view :
     Data
     ->
@@ -97,7 +109,11 @@ view :
     -> { body : Html msg, title : String }
 view sharedData page model toMsg pageView =
     { body =
-        pageView.body
+        resetStyles
+            :: (Header.view ToggleMobileMenu page.path
+                    |> Html.Styled.map toMsg
+               )
+            :: pageView.body
             |> Html.Styled.div []
             |> Html.Styled.toUnstyled
     , title = pageView.title
