@@ -41,7 +41,7 @@ const Services: FunctionComponent = () => {
                 constantemente para así sostener el proceso de otros desde la teoría y la
                 experiencia.
               </p>
-              <p className="text-primary-paragraph mb-8">En estos año me formé como:</p>
+              <p className="text-primary-paragraph mb-8">En estos años me formé como:</p>
 
               <ul className="text-primary-paragraph ml-4 mb-8 list-disc">
                 <li>
