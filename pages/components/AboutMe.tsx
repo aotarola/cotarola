@@ -303,7 +303,7 @@ const Services: FunctionComponent = () => {
             <img
               className="sm:h-96 mx-auto rounded-lg"
               alt="Conoceme como humana 6"
-              src="/human-6.jpg"
+              src="/human-7.jpg"
             />
           </div>
         </div>
