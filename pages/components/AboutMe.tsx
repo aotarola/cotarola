@@ -11,21 +11,23 @@ const Services: FunctionComponent = () => {
           <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <div className="flex flex-wrap">
-          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+          <div className="mx-auto p-6">
             <img className="sm:h-96 mx-auto rounded-xl" alt="Quien Soy" src="/quien-soy.jpg" />
           </div>
-          <div className="w-5/6 sm:w-1/2 p-6">
-            <div className="p-6">
-              <p className="text-primary-paragraph mb-8">
-                Mi Nombre es Claudia Otárola, químico farmacéutico de profesión con más de 10 años
-                en el sector farmacéutico privado, nacida un 31 de Marzo de 1988 para que saques la
-                cuenta de mi edad según el momento en que estés leyendo esto. No obstante, mi
-                vocación de servicio ha apuntado hacia el Crecimiento, Evolución y Transformación
-                personal aplicando los conocimientos de mi formación científica más los
-                conocimientos holísticos que he ido aprendiendo constantemente como nutrición en mi
-                propio camino y transformación personal para así entregarlo desde un acompañamiento
-                amable, respetuoso, amoroso y compasivo.
-              </p>
+          <div className="sm:w-1/2 p-6">
+            <p className="text-primary-paragraph mb-8">
+              Mi nombre es Claudia Otárola, químico farmacéutico de profesión con más de 10 años en
+              el sector farmacéutico privado, nacida un 31 de Marzo de 1988 para que saques la
+              cuenta de mi edad según el momento en que estés leyendo esto. No obstante, mi vocación
+              de servicio ha apuntado hacia el Crecimiento, Evolución y Transformación personal
+              aplicando los conocimientos de mi formación científica más los conocimientos
+              holísticos que he ido aprendiendo constantemente como nutrición en mi propio camino y
+              transformación personal para así entregarlo desde un acompañamiento amable,
+              respetuoso, amoroso y compasivo.
+            </p>
+          </div>
+          <div className="p-6">
+            <div>
               <p className="text-primary-paragraph mb-8">
                 El año 2019 tomé la decisión de profundizar en mi crecimiento personal y
                 autoobservación y me formé como Mentora Espiritual con Paula Velez (Psicóloga,
@@ -111,6 +113,10 @@ const Services: FunctionComponent = () => {
             </div>
           </div>
         </div>
+
+        <h2 className="w-full my-2 text-xl font-bold leading-tight text-center text-primary-title">
+          CONOCEME COMO HUMANA
+        </h2>
       </div>
     </section>
   )
