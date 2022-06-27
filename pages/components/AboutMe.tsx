@@ -114,9 +114,199 @@ const Services: FunctionComponent = () => {
           </div>
         </div>
 
-        <h2 className="w-full my-2 text-xl font-bold leading-tight text-center text-primary-title">
+        <h2 className="w-full my-2 text-2xl font-bold leading-tight text-center text-primary-title">
           CONOCEME COMO HUMANA
         </h2>
+        <div className="w-full mb-4">
+          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div className="flex flex-wrap">
+          <div className="w-5/6 sm:w-1/2 p-6">
+            <p className="text-primary-paragraph mb-8">
+              Dejando un poco aparte la presentación académica, títulos, cursos, etc. Mi
+              identificación no es nada de eso más que ayudas para enlazarme con lo terrenal, tocar
+              mente y lo intelectual donde nos programaron para asentar nuestra seguridad y
+              confiabilidad. ¿Te suena?
+            </p>
+
+            <p className="text-primary-paragraph mb-8">
+              Te cuento que tengo sol en Aries, ascendente Capricornio y luna en Virgo. Me ha sido
+              desafiante aprender a moverme desde la energía alta de cada uno de ellos; a lo largo
+              de mi vida estuve bastante influenciada mayormente por la energía baja y densa de
+              estos aspectos. Con esto me gustaría que sepas que no soy ninguna elegida por la
+              divinidad, ni la humana perfecta que vive en estado zen todo el día o que no transito
+              emociones densas ni tampoco busco ser una maestra que debas seguir, mi misión es
+              acompañarte a descubrir que TÚ tienes la única maestría que DEBES seguir y escuchar.
+              Decidí transformarme en una persona amable, dulce, amorosa, noble, audaz, asertiva y
+              he decidido ser muy determinada cuando tomo una decisión.
+            </p>
+          </div>
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+            <img
+              className="sm:h-96 mx-auto rounded-xl"
+              alt="Conoceme como humana 1"
+              src="/human-1.jpg"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+            <img
+              className="sm:h-96 mx-auto rounded-xl"
+              alt="Conoceme como humana 2"
+              src="/human-2.jpg"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 p-6 mt-6">
+            <div className="align-middle">
+              <p className="text-primary-paragraph mb-8">
+                Te cuento que de pequeña siempre estuve muy ligada al deporte, 4 años en gimnasia
+                artística y más de 10 años en volleyball. En mi adolescencia viví una profunda
+                depresión, muy solitaria debido a la nula comunicación emocional con mis padres y me
+                llevó a un intento de suicidio, un tema que en mi familia se abordó con bastante
+                silencio y censura. Producto de mi aprendizaje sobre “la represión emocional” me
+                sumergí en todo tipo de adicciones para apagar y callar mis conflictos internos
+                entre ellos mucho alcohol, diferentes tipos de drogas, dependencia y co-dependencia
+                emocional y excesos en mi autoexigencia interna manteniéndome todo el tiempo ocupada
+                y fuera de casa a través de diferentes actividades entre deporte, fiestas y trabajo
+                (desde los 15 años) sin dejar de lado nunca mis estudios siempre con notas
+                destacadas.
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap">
+          <div className="w-5/6 sm:w-1/2 p-6">
+            <p className="text-primary-paragraph mb-8">
+              Fui guitarrista en una banda de punk rock durante 3 años y al entrar a la universidad
+              se exacerbó mi descontrol interno pero muy enfocada en mi objetivo principal que era
+              “titularme para irme pronto de casa” ( SÍ, este era mi gran sueño…). En mi época
+              universitaria trabajé en un local de comida rápida y luego comencé a trabajar doble
+              como empaquetadora en un supermercado y cajera en otro, continuaba en volleyball,
+              estaba en una relación de pareja y mucha vida bohemia, ¿cómo me iba en la universidad?
+              bastante bien para la vida que estaba sosteniendo. A mis 19 años viví la separación de
+              mis padres, a mis 25 años la trascendencia de mi papá, fue el mismo año que encontré
+              trabajo de mi profesión y me fui de casa a otra ciudad a más de 1500 kms. Este mismo
+              año terminé una larga relación de pareja, ambos fueron dolores que fui arrastrando
+              hasta el año 2019. El 2018 se me expresó un cáncer cervicouterino que fue quien me
+              mostró parte mi rechazo interior.
+            </p>
+          </div>
+
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+            <img
+              className="sm:h-96 mx-auto rounded-xl"
+              alt="Conoceme como humana 3"
+              src="/human-3.jpg"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+            <img
+              className="sm:h-96 mx-auto rounded-xl"
+              alt="Conoceme como humana 4"
+              src="/human-4.jpg"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 p-6 mt-6">
+            <div className="align-middle">
+              <p className="text-primary-paragraph mb-8">
+                Toda mi vida siempre supe que había algo más, a veces me sentía muy guiada pero me
+                desconectaba rápidamente con mi patrón inconsciente de ahogar, rechazar y silenciar
+                mis dolores internos. Finalmente el 2019 después de una profunda exploración a
+                través de medicina ancestral (hongos y ayahuasca) se me movió el mundo entero y fue
+                el término de mi segunda relación de pareja que me hizo plantar de lleno la mirada
+                en mi interior y fue cuando descubrí una maraña de desorden, miedos, sombras, apegos
+                enfermizos…verme en esta vulnerabilidad abrió algo en mi, puede dar cierre a la
+                etapa adictiva y ví con claridad todas las formas que querían expresarse para
+                llevarme a ocultarme y rechazarme. Aquí comenzó este tremendo viaje de salir de mi
+                capullo protector y caminar más liviana.
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap">
+          <div className="w-5/6 sm:w-1/2 p-6">
+            <p className="text-primary-paragraph mb-8">
+              Comencé a estudiar sola sobre psicología, la mente humana, programaciones mentales,
+              heridas de infancia, filosofía del budismo, comencé a meditar, a hacer yoga, aprendí a
+              respirar, fue toda una exploración en solitario GUIADA POR MI PROPIO MIEDO A PEDIR
+              AYUDA. En esa época decidí aislarme del mundo, de amistades, de mi familia, solo
+              asistía al trabajo y pasado un tiempo comencé a ir a encuentros budista,
+              conversatorios, talleres, grupos espirituales que se reunían a reflexionar sobre la
+              vida y a conocer personas con una mirada más amplia de la vida y la consciencia.
+              Comencé a tomar terapia psicológica con el fin de romper ese miedo infantil y apoyarme
+              y sostenerme porque sentía un llamado de ir más profundo; desde la mirada de la
+              psicología crecí con unos padres ambivalentes y mi psicóloga me dijo que estuve al
+              borde de la esquizofrenia, ella no entendía porqué no se me gatilló, tampoco entendía
+              cómo podía separar tan bien mi vida y lograr tener una vida tan “exitosa” ante ojos de
+              la sociedad y tan desequilibrada emocionalmente. Cuando finalizamos el paquete de
+              sesiones ella fue quien me alumbró el camino y me hizo ver cómo mi historia, mi vida,
+              mis formas de trascender mis sombras insconcientes pueden dar luz a otros corazones
+              que están viendo todo oscuro.
+            </p>
+          </div>
+
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+            <img className="sm:h-96 mx-auto rounded-xl" alt="Abre tus Alas" src="/human-6.jpg" />
+          </div>
+        </div>
+
+        <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+            <img
+              className="sm:h-96 mx-auto rounded-xl"
+              alt="Conoceme como humana 5"
+              src="/human-5.jpg"
+            />
+          </div>
+          <div className="w-full sm:w-1/2 p-6 mt-6">
+            <div className="align-middle">
+              <p className="text-primary-paragraph mb-8">
+                En el año 2020 vendí una propiedad (compré 2 entre los años 2013 y 2016) y decidí
+                renunciar a mis labores de QF para lanzarme de lleno a mi formación holística y
+                emprender en este nuevo camino, esta venta me ayudó a solventar todas mis
+                formaciones y vivir tranquila durante un período de un año. Decidimos irnos a vivir
+                al campo con mi actual pareja y felizmente fui elegida como portal de entrada para
+                una alma que se viene a plantar a esta dimensión. En marzo del 2022 tomé la decisión
+                de retomar mis labores y servicios como QF y a la par estoy gestando nuevos
+                proyectos de servicios para seguir en mi misión de recordarte que tienes la completa
+                libertad para crear tu vida.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap">
+          <div className="w-5/6 sm:w-1/2 p-6">
+            <p className="text-primary-paragraph mb-8">
+              Gracias a mi recorrido soy una fiel creyente que TODOS tenemos la capacidad de
+              transformarnos en la persona que necesitamos ser para nuestro bienestar y para sumar
+              al bienestar de quienes nos rodean. Mi mayor revelación ha sido que soy yo la única
+              que está construyendo su realidad y espero de todo corazón que esa revelación comience
+              a despertar en ti.
+            </p>
+            <p className="text-primary-paragraph mb-8">
+              Gracias por este reencuentro de almas y por decidir que caminemos juntos de alguna
+              forma a través del servicio que quieras tomar conmigo.
+            </p>
+          </div>
+
+          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+            <img
+              className="sm:h-96 mx-auto rounded-lg"
+              alt="Conoceme como humana 6"
+              src="/human-6.jpg"
+            />
+          </div>
+        </div>
       </div>
     </section>
   )
