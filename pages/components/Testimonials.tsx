@@ -10,8 +10,19 @@ const Testimonials: FunctionComponent = () => {
         <div className="w-full mb-4">
           <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-        <div className="flex flex-wrap">
-          <div className="w-5/6 sm:w-1/2 p-6">
+        <div className="m-1">
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              width="450"
+              height="315"
+              src="https://www.youtube.com/embed/dFZJkB1Bvdw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="mt-5 text-center">
             <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">
               Andrea Flores
             </h3>
@@ -30,20 +41,9 @@ const Testimonials: FunctionComponent = () => {
               IG: @andrea.flores.holistica
             </a>
           </div>
-          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
-            <iframe
-              width="450"
-              height="315"
-              src="https://www.youtube.com/embed/dFZJkB1Bvdw"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
         </div>
-        <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+        <div className="m-1">
+          <div className="aspect-w-16 aspect-h-9">
             <iframe
               width="450"
               height="315"
@@ -54,28 +54,37 @@ const Testimonials: FunctionComponent = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="w-full sm:w-1/2 p-6 mt-6">
-            <div className="align-middle">
-              <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">
-                Rosy Arrieta
-              </h3>
-              <p className="text-primary-paragraph mb-8">Bioquímica</p>
-              <p className="text-primary-paragraph mb-8">
-                <em>
-                  Si tuviera que elegir alguna frase sería que ‘vinimos a este mundo con la
-                  obligación de ser felices y tratando de hacer daño a la menor cantidad de personas
-                  en el camino’....lo que realmente mereces, es ser Feliz{' '}
-                  <span role="img" aria-label="smile and hearts">
-                    😄💕
-                  </span>
-                </em>
-              </p>
-            </div>
+          <div className="mt-5 text-center">
+            <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">
+              Rosy Arrieta
+            </h3>
+            <p className="text-primary-paragraph mb-8">Bioquímica</p>
+            <p className="text-primary-paragraph mb-8">
+              <em>
+                Si tuviera que elegir alguna frase sería que ‘vinimos a este mundo con la obligación
+                de ser felices y tratando de hacer daño a la menor cantidad de personas en el
+                camino’....lo que realmente mereces, es ser Feliz{' '}
+                <span role="img" aria-label="smile and hearts">
+                  😄💕
+                </span>
+              </em>
+            </p>
           </div>
         </div>
 
-        <div className="flex flex-wrap">
-          <div className="w-5/6 sm:w-1/2 p-6">
+        <div className="m-1">
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              width="450"
+              height="315"
+              src="https://www.youtube.com/embed/CsG64_MVG4A"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="mt-5 text-center">
             <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">David Lopez</h3>
             <p className="text-primary-paragraph mb-8">
               <em>
@@ -94,21 +103,10 @@ const Testimonials: FunctionComponent = () => {
               IG: @pesticidasoficial
             </a>
           </div>
-          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
-            <iframe
-              width="450"
-              height="315"
-              src="https://www.youtube.com/embed/CsG64_MVG4A"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
         </div>
 
-        <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
+        <div className="m-1">
+          <div className="aspect-w-16 aspect-h-9">
             <iframe
               width="450"
               height="315"
@@ -119,7 +117,7 @@ const Testimonials: FunctionComponent = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="w-full sm:w-1/2 p-6 mt-6">
+          <div className="mt-5 text-center">
             <div className="align-middle">
               <h3 className="text-3xl text-primary-title font-bold leading-none mb-3">
                 Martin Moreira
