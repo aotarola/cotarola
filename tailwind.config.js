@@ -8,9 +8,9 @@ module.exports = {
       ...defaultColors,
       ...{
         "primary": {
-          "title-400": "#CF9A12",
-          "title": "#994A4A",
-          "paragraph": "#8B8B8B"
+          "title-400": "#441257",
+          "title": "#441257",
+          "paragraph": "#644B6D"
         },
         "button": {
           "500": "#551A25"
