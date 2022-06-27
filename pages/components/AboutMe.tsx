@@ -13,7 +13,7 @@ const Services: FunctionComponent = () => {
         <div className="flex flex-wrap">
           <div className="w-5/6 mx-auto sm:pt-10 sm:w-1/2">
             <img
-              className="sm:h-96 mx-auto rounded-full"
+              className="sm:h-96 mx-auto rounded-3xl"
               alt="Quien Soy"
               src="/quien-soy.jpg"
             />
